@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
+import "@/lib/fontawesome";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Bmouse Productions",
@@ -19,6 +21,7 @@ export default function RootLayout({
       <body className="">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

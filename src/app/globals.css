@@ -1,1 +1,54 @@
 @import "tailwindcss";
+
+@layer components {
+  .custom-swiper .swiper-pagination {
+    margin-top: 2rem !important;
+    position: relative !important;
+  }
+  .custom-swiper .swiper-pagination-bullet {
+    background-color: #bdc2d3 !important; /* cor normal */
+    opacity: 1 !important;
+    width: 20px !important;
+    height: 2px !important;
+  }
+
+  .custom-swiper .swiper-pagination-bullet-active {
+    width: 80px !important;
+    height: 2px !important;
+    background-color: #3b54a0 !important; /* cor quando ativa (ex: vermelho) */
+    opacity: 1 !important;
+  }
+}
+
+@font-face {
+  font-family: "franie";
+  src: url("/fonts/franie/Franie-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "franieTitle";
+  src: url("/fonts/franie/Franie-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "franieBold";
+  src: url("/fonts/franie/Franie-Light.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.franie {
+  font-family: "franie", sans-serif;
+}
+
+.franieBold {
+  font-family: "franieBold", sans-serif;
+}
+
+.franieTitle {
+  font-family: "franieTitle", sans-serif;
+}
