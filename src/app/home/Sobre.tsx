@@ -48,7 +48,7 @@ const Sobre = () => {
         </div>
 
         <div className="flex justify-between md:items-start flex-wrap gap-4 mb-16">
-          <h1 className="text-5xl md:text-5xl font-serif uppercase leading-tight max-w-2xl md:text-left franieTitle">
+          <h1 className="text-5xl md:text-5xl font-serif uppercase leading-tight max-w-2xl md:text-left franie">
             Cases de Sucesso
           </h1>
           <span className="text-sm mt-4 md:mt-2 max-w-md hidden md:block franie">
@@ -117,7 +117,7 @@ const Sobre = () => {
         {/* Botão */}
         <div className="mt-16 flex justify-center">
           <button className="bg-black text-white px-6 py-3 transition franie">
-            Ver Todos Os Cases
+            <a href="/cases-de-sucesso">Ver Todos Os Cases</a>
           </button>
         </div>
       </div>

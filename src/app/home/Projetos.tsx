@@ -19,7 +19,7 @@ const Projetos = () => {
       {/* Título e Descrição */}
       <div className="flex flex-col md:flex-row justify-between gap-10 mb-16">
         <div className="text-center md:text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif uppercase leading-tight max-w-2xl text-black franieTitle">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif uppercase leading-tight max-w-2xl text-black franie">
             Nossos <br /> Parceiros
           </h1>
         </div>
