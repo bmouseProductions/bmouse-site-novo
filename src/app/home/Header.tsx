@@ -12,7 +12,8 @@ const imagens: string[] = [
   "/carousel2/agencia.png",
   "/carousel2/Doctalk.png",
   "/carousel2/saude.png",
-  "/carousel2/saudeempreende.png",
+  "/carousel2/see-pocket_1.png",
+  "/carousel2/see-logo.png",
   "/carousel2/studio.png",
 ];
 
