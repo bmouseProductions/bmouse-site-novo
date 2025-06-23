@@ -161,7 +161,7 @@ const GalleryBlock = ({
 
       {/* DESKTOP */}
       <div
-        className={`hidden md:flex gap-6 max-w-7xl mx-auto pt-48 ${direction === "left" ? "md:ml-40" : "md:mr-40"}`}
+        className={`hidden lg:flex gap-6 max-w-7xl mx-auto pt-48 ${direction === "left" ? "md:ml-40" : "md:mr-40"}`}
       >
         {images.map((img, index) => (
           <Image
