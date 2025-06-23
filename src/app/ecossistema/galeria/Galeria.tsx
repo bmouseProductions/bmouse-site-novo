@@ -124,7 +124,7 @@ const GalleryBlock = ({
   return (
     <div className="py-20 px-4 lg:px-0">
       {/* MOBILE */}
-      <div className="lg:hidden max-w-3xl mx-auto space-y-4">
+      <div className="md:hidden max-w-3xl mx-auto space-y-4">
         {/* Imagem grande */}
         {bigImage && (
           <Image
@@ -161,7 +161,7 @@ const GalleryBlock = ({
 
       {/* DESKTOP */}
       <div
-        className={`hidden lg:flex gap-6 max-w-7xl mx-auto pt-48 ${direction === "left" ? "md:ml-40" : "md:mr-40"}`}
+        className={`hidden md:flex gap-6 max-w-7xl mx-auto pt-48 ${direction === "left" ? "md:ml-40" : "md:mr-40"}`}
       >
         {images.map((img, index) => (
           <Image
@@ -170,13 +170,13 @@ const GalleryBlock = ({
             width={img.width}
             height={img.height}
             alt={img.alt}
-            className="w-full h-auto object-contain"
+            className=""
           />
         ))}
       </div>
 
       {/* Texto desktop */}
-      <div className="hidden lg:block">
+      <div className="hidden md:block">
         <p
           className={`max-w-7xl mx-auto pt-10 ${direction === "left" ? "md:ml-40" : "md:mr-40"}`}
         >
