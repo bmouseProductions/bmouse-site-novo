@@ -31,19 +31,21 @@ const Footer = () => {
           <h3 className="font-extralight mb-4 franie">Explore</h3>
           <ul className="space-y-2 text-sm text-zinc-600">
             <li>
-              <a href="#">Home</a>
+              <a href="/ecossistema">Ecossistema</a>
             </li>
             <li>
-              <a href="#">Sobre Nós</a>
+              <a href="/servicos">Serviços</a>
             </li>
             <li>
-              <a href="#">Trabalhos</a>
+              <a href="/cases-de-sucesso">Cases de sucesso</a>
             </li>
             <li>
-              <a href="#">Serviços</a>
-            </li>
-            <li>
-              <a href="#">Diamantes</a>
+              <a
+                href="/contato"
+                className="border border-[#14163A] rounded-3xl px-4 py-1"
+              >
+                Contato
+              </a>
             </li>
           </ul>
         </div>
