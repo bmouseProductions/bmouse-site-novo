@@ -48,14 +48,18 @@ const Header = () => {
           </div>
         </div>
         <Swiper
-          slidesPerView={3}
-          spaceBetween={50}
           loop={true}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           modules={[Autoplay]}
           breakpoints={{
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 2 },
+            0: {
+              slidesPerView: 2.7,
+              spaceBetween: 30, // mobile
+            },
+            1024: {
+              slidesPerView: 4.2,
+              spaceBetween: 0, // desktop (sem espaço entre os slides)
+            },
           }}
         >
           {imagens.map((src, index) => (
