@@ -86,7 +86,7 @@ const projetos = [
 
 const Cases = () => {
   return (
-    <section className="py-20 bg-white text-[#14163A]">
+    <section className="py-20 bg-white ">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-10 text-center md:text-left">
           <span className="border rounded-full border-[#14163A] py-2 px-4 text-sm uppercase inline-block franie">
