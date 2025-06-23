@@ -29,35 +29,37 @@ const Ecossistema = () => {
               <span className="font-bold">SAÚDE DO BRASIL</span>
             </h1>
           </div>
-          <Swiper
-            loop={true}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-            modules={[Autoplay]}
-            breakpoints={{
-              0: {
-                slidesPerView: 2.7,
-                spaceBetween: 30, // mobile
-              },
-              1024: {
-                slidesPerView: 4.2,
-                spaceBetween: 0, // desktop (sem espaço entre os slides)
-              },
-            }}
-          >
-            {imagens.map((src, index) => (
-              <SwiperSlide key={index}>
-                <div className="flex items-center justify-center h-[320px]">
-                  <Image
-                    src={src}
-                    alt={`Projeto ${index + 1}`}
-                    width={src === "/carousel2/see-logo.png" ? 100 : 180}
-                    height={80}
-                    className="object-contain"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <div className="-mt-20 md:mt-0 -mb-24 md:mb-0">
+            <Swiper
+              loop={true}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              modules={[Autoplay]}
+              breakpoints={{
+                0: {
+                  slidesPerView: 2.7,
+                  spaceBetween: 30, // mobile
+                },
+                1024: {
+                  slidesPerView: 4.2,
+                  spaceBetween: 0, // desktop (sem espaço entre os slides)
+                },
+              }}
+            >
+              {imagens.map((src, index) => (
+                <SwiperSlide key={index}>
+                  <div className="flex items-center justify-center h-[320px]">
+                    <Image
+                      src={src}
+                      alt={`Projeto ${index + 1}`}
+                      width={src === "/carousel2/see-logo.png" ? 100 : 180}
+                      height={80}
+                      className="object-contain"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </section>
       <Galeria />
