@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 "use client";
 
 import Image from "next/image";
@@ -24,42 +25,36 @@ const Header = () => {
 
         {/* Logo central no mobile */}
         <div className="absolute left-1/2 transform -translate-x-1/2 md:static md:transform-none">
-          <Image
-            src="/bmouse-logo.svg"
-            width={98}
-            height={21}
-            alt="Bmouse logo"
-          />
+          <a href="/">
+            <Image
+              src="/bmouse-logo.svg"
+              width={173}
+              height={26}
+              alt="Bmouse logo"
+            />
+          </a>
         </div>
 
         {/* Botão fale conosco no canto direito (mobile) */}
-        <div className="md:hidden">
-          <button className="border border-[#14163A] rounded-3xl px-4 py-1 text-sm">
-            Fale conosco
-          </button>
-        </div>
 
         {/* Navegação (desktop) */}
         <nav className="hidden md:flex gap-8 py-10 items-center text-center justify-items-center justify-center">
-          <ul className="flex gap-6 items-center text-sm franie">
+          <ul className="flex gap-6 items-center text-xs franie">
             <li>
-              <a href="#">Sobre nós</a>
+              <a href="/ecossistema">Ecossistema</a>
             </li>
             <li>
-              <a href="#">Nossos trabalhos</a>
+              <a href="/servicos">Serviços</a>
             </li>
             <li>
-              <a href="#">Serviços</a>
-            </li>
-            <li>
-              <a href="#">Nossos diamantes</a>
+              <a href="/cases-de-sucesso">Cases de sucesso</a>
             </li>
             <li>
               <a
-                href="#"
+                href="/contato"
                 className="border border-[#14163A] rounded-3xl px-4 py-1"
               >
-                Fale conosco
+                Contato
               </a>
             </li>
           </ul>
@@ -71,16 +66,21 @@ const Header = () => {
         <div className="md:hidden mt-4">
           <ul className="flex flex-col gap-4 text-center text-sm">
             <li>
-              <a href="#">Sobre nós</a>
+              <a href="/ecossistema">Ecossistema</a>
             </li>
             <li>
-              <a href="#">Nossos trabalhos</a>
+              <a href="/servicos">Serviços</a>
             </li>
             <li>
-              <a href="#">Serviços</a>
+              <a href="/cases-de-sucesso">Cases de sucesso</a>
             </li>
             <li>
-              <a href="#">Nossos diamantes</a>
+              <a
+                href="/contato"
+                className="border border-[#14163A] rounded-3xl px-4 py-1"
+              >
+                Contato
+              </a>
             </li>
           </ul>
         </div>

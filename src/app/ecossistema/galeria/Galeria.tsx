@@ -1,0 +1,208 @@
+import React from "react";
+import Image from "next/image";
+import Agencia from "@/app/home/Agencia";
+
+const blocks = [
+  {
+    direction: "left",
+    images: [
+      { src: "/bmouse-eco.png", width: 722, height: 555, alt: "Bmouse" },
+      { src: "/cellphone.png", width: 277, height: 555, alt: "Celular bmouse" },
+      { src: "/cardapio.png", width: 277, height: 555, alt: "Cardápio bmouse" },
+    ],
+    title: "Agência Bmouse - Marketing estratégico para a saúde.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nisi id metus ornare venenatis.",
+  },
+  {
+    direction: "right",
+    images: [
+      { src: "/camera.png", width: 277, height: 555, alt: "Camera" },
+      { src: "/camera2.png", width: 277, height: 555, alt: "Camera 2" },
+      { src: "/studio.png", width: 722, height: 555, alt: "Studio" },
+    ],
+    title: "Studios Bmouse - Audiovisual de alto padrão e estética memorável.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nisi id metus ornare venenatis.",
+  },
+  {
+    direction: "left",
+    images: [
+      { src: "/doctalk.png", width: 722, height: 555, alt: "Doctalk" },
+      {
+        src: "/camera-docktalk.png",
+        width: 277,
+        height: 555,
+        alt: "Camera Doctalk",
+      },
+      {
+        src: "/phone-doctalk.png",
+        width: 277,
+        height: 555,
+        alt: "Phone Doctalk",
+      },
+    ],
+    title: "DocTalk - Podcast que dá voz aos protagonistas da saúde.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nisi id metus ornare venenatis.",
+  },
+  {
+    direction: "right",
+    images: [
+      { src: "/ecossistema/saude.png", width: 277, height: 555, alt: "Camera" },
+      {
+        src: "/ecossistema/saude-phone.png",
+        width: 277,
+        height: 555,
+        alt: "Camera 2",
+      },
+      {
+        src: "/ecossistema/laptop.png",
+        width: 722,
+        height: 555,
+        alt: "Studio",
+      },
+    ],
+    title:
+      "SaudeEmpreende.com - Portal de conteúdo e conexão para profissionais",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nisi id metus ornare venenatis.",
+  },
+  {
+    direction: "left",
+    images: [
+      { src: "/ecossistema/sea.png", width: 722, height: 555, alt: "Camera" },
+      {
+        src: "/ecossistema/sea-card.png",
+        width: 277,
+        height: 555,
+        alt: "Camera 2",
+      },
+      {
+        src: "/ecossistema/sea-card2.png",
+        width: 277,
+        height: 555,
+        alt: "Studio",
+      },
+    ],
+    title: "SE Academy - Infoprodutos e educação digital para médicos.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nisi id metus ornare venenatis.",
+  },
+  {
+    direction: "right",
+    images: [
+      {
+        src: "/ecossistema/woman-exp.png",
+        width: 277,
+        height: 555,
+        alt: "Camera",
+      },
+      {
+        src: "/ecossistema/man-exp.png",
+        width: 277,
+        height: 555,
+        alt: "Camera 2",
+      },
+      {
+        src: "/ecossistema/exp.png",
+        width: 722,
+        height: 555,
+        alt: "Studio",
+      },
+    ],
+    title:
+      "Saúde Empreende Experience - O maior evento de empreendedorismo da saúde no Brasil.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nisi id metus ornare venenatis.",
+  },
+];
+
+const GalleryBlock = ({
+  images,
+  title,
+  text,
+  direction,
+}: (typeof blocks)[0]) => {
+  const bigImage = images.find((img) => img.width === 722);
+  const smallImages = images.filter((img) => img.width !== 722);
+
+  return (
+    <div className="py-20 px-4 lg:px-0">
+      {/* MOBILE */}
+      <div className="md:hidden max-w-3xl mx-auto space-y-4">
+        {/* Imagem grande */}
+        {bigImage && (
+          <Image
+            src={bigImage.src}
+            width={bigImage.width}
+            height={bigImage.height}
+            alt={bigImage.alt}
+            className="w-full h-auto object-contain"
+          />
+        )}
+
+        {/* Duas imagens lado a lado */}
+        <div className="grid grid-cols-2 gap-4">
+          {smallImages.map((img, idx) => (
+            <Image
+              key={idx}
+              src={img.src}
+              width={img.width}
+              height={img.height}
+              alt={img.alt}
+              className="w-full h-auto object-contain"
+            />
+          ))}
+        </div>
+
+        {/* Texto centralizado */}
+        <div className="text-center pt-6">
+          <p>
+            <span className="font-bold block mb-2 text-lg">{title}</span>
+            <span className="text-sm text-gray-700">{text}</span>
+          </p>
+        </div>
+      </div>
+
+      {/* DESKTOP */}
+      <div
+        className={`hidden md:flex gap-6 max-w-7xl mx-auto pt-48 ${direction === "left" ? "md:ml-40" : "md:mr-40"}`}
+      >
+        {images.map((img, index) => (
+          <Image
+            key={index}
+            src={img.src}
+            width={img.width}
+            height={img.height}
+            alt={img.alt}
+            className="w-full h-auto object-contain"
+          />
+        ))}
+      </div>
+
+      {/* Texto desktop */}
+      <div className="hidden md:block">
+        <p
+          className={`max-w-7xl mx-auto pt-10 ${direction === "left" ? "md:ml-40" : "md:mr-40"}`}
+        >
+          <span className="font-bold block mb-4 text-lg md:text-xl">
+            {title}
+          </span>
+          <span className="text-sm md:text-base text-gray-700">{text}</span>
+        </p>
+      </div>
+    </div>
+  );
+};
+
+const Galeria = () => {
+  return (
+    <>
+      <section>
+        {blocks.map((block, i) => (
+          <GalleryBlock key={i} {...block} />
+        ))}
+      </section>
+      <div className="mt-40">
+        <Agencia />
+      </div>
+    </>
+  );
+};
+
+export default Galeria;

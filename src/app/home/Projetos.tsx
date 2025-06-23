@@ -8,74 +8,78 @@ import "swiper/css/autoplay";
 import Image from "next/image";
 
 const Projetos = () => {
-  const imagens: string[] = [
-    "/carousel/cardeal.svg",
-    "/carousel/clenio.svg",
-    "/carousel/elis.svg",
-    "/carousel/bomd.svg",
-    "/carousel/zoomies.svg",
-    "/carousel/sorridents.svg",
-    "/carousel/whg.svg",
-    "/carousel/urt.svg",
-    "/carousel/transtriangulo.svg",
-    "/carousel/petsmellon.svg",
-    "/carousel/patense-agro.svg",
-    "/carousel/neo-genetics.svg",
-    "/carousel/mira.svg",
-    "/carousel/medic-imagem.svg",
-    "/carousel/grupo-patense.svg",
-  ];
-
   return (
-    <section className="py-20 container mx-auto">
-      <div className="flex flex-col md:flex-row justify-between gap-8 mb-32">
-        <div>
-          <h1 className="text-5xl md:text-5xl font-serif uppercase leading-tight max-w-2xl text-[#14163A] text-center md:text-left franieTitle">
-            Nossos <br /> grandes projetos
+    <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div className="mb-10 text-center md:text-left">
+        <span className="border rounded-full border-[#14163A] py-2 px-4 text-sm uppercase inline-block franie">
+          Sobre nós
+        </span>
+      </div>
+
+      {/* Título e Descrição */}
+      <div className="flex flex-col md:flex-row justify-between gap-10 mb-16">
+        <div className="text-center md:text-left">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif uppercase leading-tight max-w-2xl text-black franieTitle">
+            Nossos <br /> Parceiros
           </h1>
         </div>
-        <div className="max-w-2xl ">
-          <p className="text-[#14163A] max-w-5/6 mx-auto md:max-w-none md:mx-0 franie">
-            Ao longo de nossa trajetória, acumulamos uma vasta experiência na
-            produção de conteúdos para o setor de saúde. Nossas campanhas
-            comerciais estratégicas e materiais de alta qualidade já alcançaram
-            milhões de visualizações nas redes sociais, conectando efetivamente
-            o público com este importante segmento. Informamos, impactamos e
-            emocionamos, sempre com excelência e profissionalismo.
+        <div className="text-center md:text-left max-w-2xl mx-auto md:mx-0">
+          <p className="text-black text-base sm:text-lg franie leading-relaxed">
+            Transformações reais. Resultados comprovados. <br /> <br />
+            Explore nossos projetos e descubra como ajudamos médicos e empresas
+            a alcançarem protagonismo digital.
           </p>
         </div>
       </div>
 
+      {/* Swiper */}
       <Swiper
-        slidesPerView={3}
-        spaceBetween={50}
+        slidesPerView={1}
+        spaceBetween={30}
         loop={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
         modules={[Autoplay]}
         breakpoints={{
-          768: { slidesPerView: 2.2 },
-          1024: { slidesPerView: 4 },
+          1024: { slidesPerView: 2 },
         }}
       >
-        {imagens.map((src, index) => (
-          <SwiperSlide key={index}>
-            <div className="flex items-center justify-center h-[320px]">
-              <Image
-                src={src}
-                alt={`Projeto ${index + 1}`}
-                width={180}
-                height={80}
-                className="object-contain"
-              />
+        {[1, 2, 3].map((i) => (
+          <SwiperSlide key={i}>
+            <div className="w-full rounded-xl border border-gray-300 p-6 md:p-8 bg-white shadow-sm mx-auto max-w-xl">
+              <p className="italic text-black text-lg mb-2">
+                Lorem ipsum dolor
+              </p>
+              <p className="text-gray-700 mb-6 leading-relaxed text-sm sm:text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse ultricies, felis iaculis ornare malesuada, lectus
+                tellus egestas elit, vel pretium quam sem ut sem.
+              </p>
+
+              <div className="flex items-center gap-4 flex-wrap sm:flex-nowrap">
+                <div className="w-16 h-16 relative overflow-hidden rounded-full shrink-0">
+                  <Image
+                    src="/elisangela.svg"
+                    alt="Dra. Elisangela"
+                    fill
+                    className="object-cover rounded-full"
+                  />
+                </div>
+                <div className="flex-1">
+                  <p className="font-semibold text-gray-900">Dra. Elisangela</p>
+                  <p className="text-gray-500 text-sm">Alergista e Pediatra</p>
+                </div>
+                <a
+                  href="#"
+                  className="bg-black text-white text-sm px-4 py-2 rounded hover:opacity-90 whitespace-nowrap"
+                >
+                  Saber Mais
+                </a>
+              </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="mt-16 flex justify-center">
-        <button className="bg-[#14163A] text-white px-6 py-3 rounded-full hover:bg-[#1f225a] transition franie">
-          SAIBA MAIS
-        </button>
-      </div>
     </section>
   );
 };

@@ -1,35 +1,44 @@
-import Image from "next/image";
 import React from "react";
 
 const Agencia = () => {
   return (
-    <section>
-      <div className="container mx-auto justify-items-center items-center max-w-3xl pb-32">
-        <h1 className="text-5xl md:text-6xl font-serif uppercase leading-tight max-w-2xl text-[#14163A] text-center franieTitle">
-          a bmouse é a agência ideal para te gerar valor.
-        </h1>
-      </div>
+    <section className="relative mx-auto  container md:h-[90vh] h-[500px]  overflow-hidden">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source src="/video/D1.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo em HTML5.
+      </video>
 
-      {/* Imagem para desktop */}
-      <div className="hidden md:block mx-auto w-full max-w-[1464px]">
-        <Image
-          src="/logo-vido.svg"
-          alt="logo video"
-          width={1464}
-          height={813}
-          className="w-full h-auto"
-        />
-      </div>
+      <div className="absolute inset-0 bg-black opacity-70" />
 
-      {/* Imagem para mobile */}
-      <div className="block md:hidden container">
-        <Image
-          src="/mobile/logo-video.png"
-          alt="logo video mobile"
-          width={425}
-          height={842} // ou a altura da sua imagem mobile
-          className="mx-auto h-auto w-5/6"
-        />
+      <div className="relative z-10 md:h-full w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-20 text-white">
+        <div className="text-left md:w-1/2 mt-20 md:mt-0">
+          <span className="inline-block border border-white px-4 py-1 text-xs tracking-widest rounded-full mb-4">
+            SOBRE NÓS
+          </span>
+          <h1 className="text-4xl md:text-5xl font-semibold md:leading-tight">
+            FAÇA JÁ O SEU <br /> ORÇAMENTO
+          </h1>
+        </div>
+
+        <div className="md:text-right text-center md:w-1/2 mt-10 md:mt-0 space-y-6">
+          <p className="text-sm md:text-base max-w-sm ml-auto">
+            Está pronto para crescer com estratégia e verdade?
+            <br />
+            Clique abaixo e receba sua proposta personalizada.
+          </p>
+          <a
+            href="#"
+            className="md:inline-block bg-white text-black text-sm px-6 py-3 font-semibold hover:opacity-90 transition rounded"
+          >
+            QUERO MEU PLANEJAMENTO
+          </a>
+        </div>
       </div>
     </section>
   );
