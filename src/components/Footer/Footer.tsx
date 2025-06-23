@@ -1,11 +1,4 @@
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faBehance,
-  faInstagram,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -45,51 +38,26 @@ const Footer = () => {
         </div>
 
         {/* Coluna 3 - Contato */}
-        <div className="flex-1 text-center md:text-left mx-auto">
-          <h3 className="font-extralight mb-4 franie hidden md:block">
-            Fale Conosco
-          </h3>
-          <form className="flex-col sm:flex-row gap-4 w-full md:mb-5 hidden md:flex">
-            <input
-              type="email"
-              placeholder="Seu Email"
-              className="flex-1 px-4 py-2 rounded-md border border-black focus:outline-none"
-            />
-            <button
-              type="submit"
-              className="bg-[#0E123B] text-white px-6 py-2 rounded-md w-full sm:w-auto franie"
-            >
-              Subscribe
-            </button>
-          </form>
-
-          {/* Social Icons */}
-          <div className="flex gap-4">
+        <div className="flex-1 text-center md:text-left mx-auto space-y-3 text-sm text-black franie">
+          <p>📍 Rua Doutor José Olímpio Borges, 134, Centro, Patos de Minas</p>
+          <p>
+            ✉️{" "}
             <a
-              href="#"
-              className="w-10 h-10 bg-[#0E123B] p-2 rounded-full flex items-center justify-center text-white"
+              href="mailto:info@bmouseproductions.com"
+              className="underline hover:text-blue-700"
             >
-              <FontAwesomeIcon icon={faLinkedin} />
+              info@bmouseproductions.com
             </a>
+          </p>
+          <p>
+            📞{" "}
             <a
-              href="#"
-              className="w-10 h-10 bg-[#0E123B] p-2 rounded-full flex items-center justify-center text-white"
+              href="tel:+5534999306776"
+              className="underline hover:text-blue-700"
             >
-              <FontAwesomeIcon icon={faBehance} />
+              (34) 99930-6776
             </a>
-            <a
-              href="#"
-              className="w-10 h-10 bg-[#0E123B] p-2 rounded-full flex items-center justify-center text-white"
-            >
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a
-              href="#"
-              className="w-10 h-10 bg-[#0E123B] p-2 rounded-full flex items-center justify-center text-white"
-            >
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-          </div>
+          </p>
         </div>
       </div>
     </footer>
