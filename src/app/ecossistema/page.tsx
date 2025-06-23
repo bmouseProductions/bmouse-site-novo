@@ -13,7 +13,8 @@ const imagens: string[] = [
   "/carousel2/agencia.png",
   "/carousel2/Doctalk.png",
   "/carousel2/saude.png",
-  "/carousel2/saudeempreende.png",
+  "/carousel2/see-pocket_1.png",
+  "/carousel2/see-logo.png",
   "/carousel2/studio.png",
 ];
 
@@ -29,13 +30,18 @@ const Ecossistema = () => {
             </h1>
           </div>
           <Swiper
-            slidesPerView={3}
-            spaceBetween={50}
             loop={true}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             modules={[Autoplay]}
             breakpoints={{
-              1024: { slidesPerView: 2 },
+              0: {
+                slidesPerView: 2.7,
+                spaceBetween: 30, // mobile
+              },
+              1024: {
+                slidesPerView: 4.2,
+                spaceBetween: 0, // desktop (sem espaço entre os slides)
+              },
             }}
           >
             {imagens.map((src, index) => (
@@ -44,7 +50,7 @@ const Ecossistema = () => {
                   <Image
                     src={src}
                     alt={`Projeto ${index + 1}`}
-                    width={180}
+                    width={src === "/carousel2/see-logo.png" ? 100 : 180}
                     height={80}
                     className="object-contain"
                   />

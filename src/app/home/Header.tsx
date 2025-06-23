@@ -19,19 +19,19 @@ const imagens: string[] = [
 
 const Header = () => {
   return (
-    <section className="py-10">
+    <section className="pt-10">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 px-3 md:text-left">
           <span className="border rounded-full border-[#14163A] py-2 px-4 text-sm uppercase inline-block franie">
             Sobre nós
           </span>
         </div>
-        <div className="gap-4 mb-16 mx-auto">
+        <div className="gap-4 md:mb-16 mx-auto">
           <h1 className="text-3xl md:text-5xl uppercase leading-tight max-w-6xl px-4 md:text-left franie">
             O MAIOR ECOSSISTEMA PARA PROFISSIONAIS DA{" "}
             <span className="font-bold">SAÚDE DO BRASIL</span>
           </h1>
-          <div className="md:flex gap-32  justify-center">
+          <div className="md:flex md:gap-32  justify-center">
             <Image
               src="/header-black.png"
               alt="Grupo Bmouse"
