@@ -21,8 +21,7 @@ const Footer = () => {
             className="h-8 mb-4 mx-auto md:mx-0"
           />
           <p className="text-sm text-zinc-600 max-w-xs franie">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam
-            pretium ex, eu ornare leo aliquam vitae.
+            Criamos posicionamento, presença e reputação.
           </p>
         </div>
 
@@ -40,12 +39,7 @@ const Footer = () => {
               <a href="/cases-de-sucesso">Cases de sucesso</a>
             </li>
             <li>
-              <a
-                href="/contato"
-                className="border border-[#14163A] rounded-3xl px-4 py-1"
-              >
-                Contato
-              </a>
+              <a href="/contato">Contato</a>
             </li>
           </ul>
         </div>
