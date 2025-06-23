@@ -124,7 +124,7 @@ const GalleryBlock = ({
   return (
     <div className="py-20 px-4 lg:px-0">
       {/* MOBILE */}
-      <div className="md:hidden max-w-3xl mx-auto space-y-4">
+      <div className="lg:hidden max-w-3xl mx-auto space-y-4">
         {/* Imagem grande */}
         {bigImage && (
           <Image
@@ -176,7 +176,7 @@ const GalleryBlock = ({
       </div>
 
       {/* Texto desktop */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <p
           className={`max-w-7xl mx-auto pt-10 ${direction === "left" ? "md:ml-40" : "md:mr-40"}`}
         >
