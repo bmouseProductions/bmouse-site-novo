@@ -69,7 +69,7 @@ const Header = () => {
                 <Image
                   src={src}
                   alt={`Projeto ${index + 1}`}
-                  width={src === "/carousel2/see-logo.png" ? 120 : 180}
+                  width={src === "/carousel2/see-logo.png" ? 100 : 180}
                   height={80}
                   className="object-contain"
                 />
