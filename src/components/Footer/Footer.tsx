@@ -43,10 +43,10 @@ const Footer = () => {
           <p>
             ✉️{" "}
             <a
-              href="mailto:info@bmouseproductions.com"
+              href="mailto:contato@bmouse.com.br"
               className="underline hover:text-blue-700"
             >
-              info@bmouseproductions.com
+              contato@bmouse.com.br
             </a>
           </p>
           <p>
