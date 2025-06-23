@@ -11,7 +11,7 @@ const blocks = [
       { src: "/cardapio.png", width: 277, height: 555, alt: "Cardápio bmouse" },
     ],
     title: "Agência Bmouse - Marketing estratégico para a saúde.",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nisi id metus ornare venenatis.",
+    text: "Posicionamento, autoridade e conteúdo que gera resultado para quem cuida de vidas.",
   },
   {
     direction: "right",
@@ -21,7 +21,7 @@ const blocks = [
       { src: "/studio.png", width: 722, height: 555, alt: "Studio" },
     ],
     title: "Studios Bmouse - Audiovisual de alto padrão e estética memorável.",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nisi id metus ornare venenatis.",
+    text: "Transformamos histórias, marcas e profissionais em narrativas visuais que encantam, engajam e elevam sua autoridade.",
   },
   {
     direction: "left",
@@ -41,7 +41,7 @@ const blocks = [
       },
     ],
     title: "DocTalk - Podcast que dá voz aos protagonistas da saúde.",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nisi id metus ornare venenatis.",
+    text: "Dicas práticas de empreendedorismo, conversas sobre os temas mais relevantes da saúde e trajetórias inspiradoras de quem está fazendo a diferença no setor.",
   },
   {
     direction: "right",
@@ -62,7 +62,7 @@ const blocks = [
     ],
     title:
       "SaudeEmpreende.com - Portal de conteúdo e conexão para profissionais",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nisi id metus ornare venenatis.",
+    text: "Conteúdos estratégicos, notícias relevantes e conexões valiosas para profissionais que querem liderar o futuro da saúde com visão empreendedora.",
   },
   {
     direction: "left",
@@ -82,7 +82,7 @@ const blocks = [
       },
     ],
     title: "SE Academy - Infoprodutos e educação digital para médicos.",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nisi id metus ornare venenatis.",
+    text: "Plataforma que produz, lança e potencializa cursos de profissionais da saúde, transformando conhecimento técnico em produtos digitais de alto impacto.",
   },
   {
     direction: "right",
@@ -108,7 +108,7 @@ const blocks = [
     ],
     title:
       "Saúde Empreende Experience - O maior evento de empreendedorismo da saúde no Brasil.",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis nisi id metus ornare venenatis.",
+    text: "Eventos que reúnem os nomes mais relevantes do setor em encontros presenciais que inspiram, provocam e aceleram a transformação da saúde no Brasil.",
   },
 ];
 
