@@ -94,7 +94,7 @@ const blocks = [
         alt: "Camera",
       },
       {
-        src: "/ecossistema/man-exp.png",
+        src: "/ecossistema/tannure.png",
         width: 277,
         height: 555,
         alt: "Camera 2",
