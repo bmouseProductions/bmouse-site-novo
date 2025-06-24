@@ -7,6 +7,7 @@ import Sobre from "./home/Sobre";
 import Projetos from "./home/Projetos";
 import Agencia from "./home/Agencia";
 import Header from "./home/Header";
+import BackTo from "@/components/BackTo";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Sobre />
       <Projetos />
       <Agencia />
+      <BackTo />
     </section>
   );
 }
