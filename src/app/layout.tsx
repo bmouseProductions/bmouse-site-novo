@@ -7,6 +7,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import "@/lib/fontawesome";
 import Footer from "@/components/Footer/Footer";
+import BackTo from "../components/backto/BackTo";
 
 export default function RootLayout({
   children,
@@ -21,6 +22,7 @@ export default function RootLayout({
         {!hideHeaderFooter && <Header />}
         {children}
         {!hideHeaderFooter && <Footer />}
+        <BackTo />
       </body>
     </html>
   );
