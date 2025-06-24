@@ -90,12 +90,12 @@ const Cases = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-10 text-center md:text-left">
           <span className="border rounded-full border-[#14163A] py-2 px-4 text-sm uppercase inline-block franie">
-            Sobre nós
+            PORTFÓLIO
           </span>
         </div>
 
         <div className="flex justify-between md:items-start flex-wrap gap-4 mb-16">
-          <h1 className="text-5xl md:text-5xl font-serif uppercase leading-tight max-w-2xl  md:text-left franieTitle">
+          <h1 className="text-5xl md:text-5xl font-serif uppercase leading-tight max-w-2xl  md:text-left franie">
             Cases de Sucesso
           </h1>
           <span className="text-sm mt-4 md:mt-2 max-w-md hidden md:block franie">

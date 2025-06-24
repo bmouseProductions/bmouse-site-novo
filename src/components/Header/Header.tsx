@@ -23,7 +23,6 @@ const Header = () => {
           )}
         </button>
 
-        {/* Logo central no mobile */}
         <div className="absolute left-1/2 transform -translate-x-1/2 md:static md:transform-none">
           <a href="/">
             <Image
@@ -35,9 +34,6 @@ const Header = () => {
           </a>
         </div>
 
-        {/* Botão fale conosco no canto direito (mobile) */}
-
-        {/* Navegação (desktop) */}
         <nav className="hidden md:flex gap-8 py-10 items-center text-center justify-items-center justify-center">
           <ul className="flex gap-6 items-center text-xs franie">
             <li>
@@ -61,7 +57,6 @@ const Header = () => {
         </nav>
       </div>
 
-      {/* Menu Mobile Dropdown */}
       {isOpen && (
         <div className="md:hidden mt-4">
           <ul className="flex flex-col gap-4 text-center text-sm">

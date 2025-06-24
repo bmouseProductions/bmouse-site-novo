@@ -30,26 +30,47 @@ const Servicos = () => {
         {/* Grade de serviços */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {[
-            "/servicos/kv.png",
-            "/servicos/rede.png",
-            "/servicos/roteiro.png",
-            "/servicos/performance.png",
-            "/servicos/producao.png",
-            "/servicos/infoprod.png",
-          ].map((src, i) => (
-            <Image
-              key={i}
-              src={src}
-              width={722}
-              height={297}
-              alt="Bmouse Productions"
-              className="w-full h-auto"
-            />
+            {
+              src: "/servicos/kv.png",
+              text: "CRIAÇÃO DE IDENTIDADE VISUAL E KV",
+            },
+            { src: "/servicos/rede.png", text: "GESTÃO DE REDES SOCIAIS" },
+            {
+              src: "/servicos/roteiro.png",
+              text: "Roteirização e produção de Reels virais",
+            },
+            {
+              src: "/servicos/performance.png",
+              text: "Performance e impulsionamento",
+            },
+            {
+              src: "/servicos/producao.png",
+              text: "Produção de vídeos documentais e institucionais",
+            },
+            {
+              src: "/servicos/infoprod.png",
+              text: "Lançamentos digitais e infoprodutos",
+            },
+          ].map(({ src, text }, i) => (
+            <div key={i} className="relative w-full h-auto">
+              <Image
+                src={src}
+                width={722}
+                height={297}
+                alt={text}
+                className="w-full h-auto"
+              />
+              <div className="absolute inset-0 flex items-center justify-center px-4 text-center">
+                <p className="text-white text-lg sm:text-xl md:text-2xl font-light leading-snug franie uppercase">
+                  {text}
+                </p>
+              </div>
+            </div>
           ))}
         </div>
 
         {/* Imagem final */}
-        <div className="pt-5">
+        <div className="pt-5 relative">
           <Image
             src="/servicos/estrategia.png"
             width={1464}
@@ -57,6 +78,11 @@ const Servicos = () => {
             alt="Bmouse Productions"
             className="w-full h-auto"
           />
+          <div className="absolute inset-0 flex items-center justify-center px-4 text-center">
+            <p className="text-white text-lg sm:text-xl md:text-2xl font-light leading-snug franie uppercase">
+              Estratégias completas de branding e reputação
+            </p>
+          </div>
         </div>
 
         {/* Botão */}

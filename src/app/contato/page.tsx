@@ -44,7 +44,7 @@ const Contato = () => {
         {/* Formulário */}
         <form className="w-full max-w-xl space-y-6">
           {/* Campos duplos */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
             <div>
               <label className="block text-xs uppercase mb-1">Nome</label>
               <input
@@ -52,16 +52,7 @@ const Contato = () => {
                 className="w-full border-b outline-none bg-transparent"
               />
             </div>
-            <div>
-              <label className="block text-xs uppercase mb-1">
-                Nome profissional
-              </label>
-              <input
-                type="text"
-                placeholder="Doe"
-                className="w-full border-b outline-none bg-transparent"
-              />
-            </div>
+
             <div>
               <label className="block text-xs uppercase mb-1">Email</label>
               <input
@@ -70,7 +61,7 @@ const Contato = () => {
               />
             </div>
             <div>
-              <label className="block text-xs uppercase mb-1">Contato</label>
+              <label className="block text-xs uppercase mb-1">Telefone</label>
               <input
                 type="text"
                 placeholder="+01 2345-6789"
@@ -80,7 +71,7 @@ const Contato = () => {
           </div>
 
           {/* Nicho */}
-          <div>
+          {/* <div>
             <p className="text-xs uppercase mb-2">Qual seu nicho?</p>
             <div className="flex flex-wrap gap-4 text-sm">
               {[
@@ -95,7 +86,7 @@ const Contato = () => {
                 </label>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Texto livre */}
           <div>

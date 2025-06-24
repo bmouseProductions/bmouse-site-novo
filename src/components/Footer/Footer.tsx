@@ -52,7 +52,8 @@ const Footer = () => {
           <p>
             📞{" "}
             <a
-              href="tel:+5534999306776"
+              href="https://wa.me/5534999306776?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%2C%20quero%20saber%20mais%20sobre%20o%20trabalho%20do%20Grupo%20BMouse"
+              target="_blank"
               className="underline hover:text-blue-700"
             >
               (34) 99930-6776
