@@ -10,7 +10,7 @@ const Agencia = () => {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="/video/D1.mp4" type="video/mp4" />
+        <source src="/video/diamonds.mp4" type="video/mp4" />
         Seu navegador não suporta vídeo em HTML5.
       </video>
 

@@ -5,8 +5,7 @@ import Agencia from "@/app/home/Agencia";
 const blocks = [
   {
     direction: "left",
-    buttonLink: "https://bmouse.com",
-    buttonText: "",
+
     images: [
       { src: "/bmouse-eco.png", width: 722, height: 555, alt: "Bmouse" },
       { src: "/cellphone.png", width: 277, height: 555, alt: "Celular bmouse" },
@@ -17,8 +16,7 @@ const blocks = [
   },
   {
     direction: "right",
-    buttonLink: "https://bmouse.com",
-    buttonText: "",
+
     images: [
       { src: "/camera.png", width: 277, height: 555, alt: "Camera" },
       { src: "/camera2.png", width: 277, height: 555, alt: "Camera 2" },
