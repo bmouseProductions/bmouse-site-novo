@@ -5,6 +5,8 @@ import Agencia from "@/app/home/Agencia";
 const blocks = [
   {
     direction: "left",
+    buttonLink: "https://bmouse.com",
+    buttonText: "",
     images: [
       { src: "/bmouse-eco.png", width: 722, height: 555, alt: "Bmouse" },
       { src: "/cellphone.png", width: 277, height: 555, alt: "Celular bmouse" },
@@ -15,6 +17,8 @@ const blocks = [
   },
   {
     direction: "right",
+    buttonLink: "https://bmouse.com",
+    buttonText: "",
     images: [
       { src: "/camera.png", width: 277, height: 555, alt: "Camera" },
       { src: "/camera2.png", width: 277, height: 555, alt: "Camera 2" },
@@ -25,6 +29,8 @@ const blocks = [
   },
   {
     direction: "left",
+    buttonLink: "https://saudeempreende.com.br/doctalk/",
+    buttonText: "",
     images: [
       { src: "/doctalk.png", width: 722, height: 555, alt: "Doctalk" },
       {
@@ -45,6 +51,8 @@ const blocks = [
   },
   {
     direction: "right",
+    buttonLink: "https://saudeempreende.com.br/",
+    buttonText: "",
     images: [
       { src: "/ecossistema/saude.png", width: 277, height: 555, alt: "Camera" },
       {
@@ -66,6 +74,8 @@ const blocks = [
   },
   {
     direction: "left",
+    buttonLink: "https://bmouse.com",
+    buttonText: "",
     images: [
       { src: "/ecossistema/sea.png", width: 722, height: 555, alt: "Camera" },
       {
@@ -86,6 +96,8 @@ const blocks = [
   },
   {
     direction: "right",
+    buttonLink: "https://saudeempreende.com.br/experience/",
+    buttonText: "",
     images: [
       {
         src: "/ecossistema/woman-exp.png",
@@ -117,6 +129,8 @@ const GalleryBlock = ({
   title,
   text,
   direction,
+  buttonLink,
+  buttonText,
 }: (typeof blocks)[0]) => {
   const bigImage = images.find((img) => img.width === 722);
   const smallImages = images.filter((img) => img.width !== 722);
@@ -186,6 +200,18 @@ const GalleryBlock = ({
           <span className="text-sm md:text-base text-gray-700">{text}</span>
         </p>
       </div>
+      {buttonLink && (
+        <div className="flex justify-center lg: mt-6">
+          <a
+            href={buttonLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-black text-white px-6 py-3 transition franie"
+          >
+            {buttonText || "Saiba mais"}
+          </a>
+        </div>
+      )}
     </div>
   );
 };
