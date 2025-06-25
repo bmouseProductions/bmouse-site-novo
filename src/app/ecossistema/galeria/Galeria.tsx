@@ -199,7 +199,9 @@ const GalleryBlock = ({
         </p>
       </div>
       {buttonLink && (
-        <div className="flex justify-center lg: mt-6">
+        <div
+          className={`mt-6 ${direction === "left" ? "md:ml-40" : "md:ml-[30rem]"}`}
+        >
           <a
             href={buttonLink}
             target="_blank"

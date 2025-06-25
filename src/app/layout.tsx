@@ -21,8 +21,9 @@ export default function RootLayout({
       <body className="">
         {!hideHeaderFooter && <Header />}
         {children}
-        {!hideHeaderFooter && <Footer />}
         <BackTo />
+
+        {!hideHeaderFooter && <Footer />}
       </body>
     </html>
   );
