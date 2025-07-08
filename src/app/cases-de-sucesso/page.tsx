@@ -12,33 +12,44 @@ const projetos = [
     src: "/cases-black/renata-black.svg",
     alt: "Renata Caldeira",
     cols: "col-span-3",
+    slug: "dra-renata-caldeira",
   },
-  { src: "/cases-black/jm-black.svg", alt: "JM", cols: "col-span-3" },
+  {
+    src: "/cases-black/jm-black.svg",
+    alt: "JM",
+    cols: "col-span-3",
+    slug: "dr-junio",
+  },
   {
     src: "/cases-black/elis-black.svg",
     srcMobile: "/cases-black/elis-black.svg",
     alt: "Disângela Menezes",
     cols: "md:col-span-2 md:row-span-3 col-span-3 row-span-1",
+    slug: "dra-elisangela",
   },
   {
     src: "/cases-black/bomd-black.svg",
     alt: "Bomd+",
     cols: "col-span-3 md:row-span-3 row-span-1",
+    slug: "bomd",
   },
   {
     src: "/cases-black/nara-black.svg",
     alt: "Nara",
     cols: "col-span-3 md:row-span-2 row-span-1",
+    slug: "dra-nara",
   },
   {
     src: "/cases-black/sorridents-black.svg",
     alt: "Sorridents",
     cols: "md:col-span-2 col-span-3 row-span-1",
+    slug: "Sorridents",
   },
   {
     src: "/cases-black/giolaser-black.svg",
     alt: "GioLaser",
     cols: "md:col-span-2 col-span-3 row-span-1",
+    slug: "giolaser",
   },
   //
   {
@@ -66,16 +77,19 @@ const projetos = [
     src: "/cases-black/jayme-black.svg",
     alt: "Jayme",
     cols: "col-span-3 md:row-span-3 row-span-1",
+    slug: "jayme-monjardim",
   },
   {
     src: "/cases-black/sorridents2-black.svg",
     alt: "sorridents",
     cols: "col-span-3 md:row-span-2 row-span-1",
+    slug: "Sorridents",
   },
   {
     src: "/cases-black/bomd2-black.svg",
     alt: "Bomd+",
     cols: "md:col-span-2 col-span-3 row-span-1",
+    slug: "bomd",
   },
   {
     src: "/cases-black/doctalk-black.svg",
@@ -130,6 +144,29 @@ const Cases = () => {
                         media="(max-width: 767px)"
                         srcSet={projeto.srcMobile}
                       />
+                      <a
+                        href={`https://cases.bmouse.com.br/${projeto.slug}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src={projeto.src}
+                          alt={projeto.alt}
+                          fill
+                          className={`transition-transform duration-300 ${
+                            isElisangela
+                              ? "object-cover"
+                              : "hover:scale-105 object-cover"
+                          }`}
+                        />
+                      </a>
+                    </picture>
+                  ) : (
+                    <a
+                      href={`https://cases.bmouse.com.br/${projeto.slug}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Image
                         src={projeto.src}
                         alt={projeto.alt}
@@ -140,18 +177,7 @@ const Cases = () => {
                             : "hover:scale-105 object-cover"
                         }`}
                       />
-                    </picture>
-                  ) : (
-                    <Image
-                      src={projeto.src}
-                      alt={projeto.alt}
-                      fill
-                      className={`transition-transform duration-300 ${
-                        isElisangela
-                          ? "object-cover"
-                          : "hover:scale-105 object-cover"
-                      }`}
-                    />
+                    </a>
                   )}
                 </div>
               </div>
