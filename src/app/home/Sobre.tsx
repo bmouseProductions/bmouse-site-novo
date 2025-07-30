@@ -3,12 +3,23 @@ import Image from "next/image";
 
 const projetos = [
   {
-    src: "/projetos/sorriso.png",
+    src: "/projetos/sorriso.jpg",
+    slug: "filme-a-forca-de-um-sorriso-grupo-salus",
     alt: "Força de um sorriso",
     cols: "md:col-span-2 md:row-span-2 row-span-1 col-span-3",
   },
-  { src: "/projetos/sorridents.svg", alt: "Sorridents", cols: "col-span-3" },
-  { src: "/projetos/jayme.png", alt: "Jayme monjardim", cols: "col-span-3" },
+  {
+    src: "/projetos/sorridents.svg",
+    slug: "Sorridents",
+    alt: "Sorridents",
+    cols: "col-span-3",
+  },
+  {
+    src: "/projetos/jayme.png",
+    slug: "jayme-monjardim",
+    alt: "Jayme monjardim",
+    cols: "col-span-3",
+  },
   {
     src: "/projetos/sele.png",
     srcMobile: "/mobile/sele.png",
@@ -18,37 +29,44 @@ const projetos = [
   {
     src: "/projetos/bomd.svg",
     alt: "Bomd+",
+    slug: "bomd",
     cols: "col-span-3 md:row-span-3 row-span-1",
   },
   {
     src: "/projetos/gio.png",
     alt: "GioLaser",
+    slug: "giolaser",
     cols: "col-span-3 md:row-span-2 row-span-1",
   },
   {
     src: "/projetos/naso.png",
     alt: "Naso",
+    slug: "clinica-naso",
     cols: "md:col-span-2 col-span-3 row-span-1",
   },
   {
     src: "/projetos/renata.svg",
     alt: "Renata",
+    slug: "dra-renata-caldeira",
     cols: "md:col-span-2 col-span-3 row-span-1",
   },
   {
     src: "/projetos/elisangela.svg",
     srcMobile: "/mobile/elis-mobile.png",
     alt: "Disângela Menezes",
+    slug: "dra-elisangela",
     cols: "md:col-span-2 md:row-span-3 col-span-3 row-span-1",
   },
   {
     src: "/projetos/junio.svg",
     alt: "Junio moreto",
+    slug: "dr-junio",
     cols: "md:col-span-3 col-span-3 row-span-2",
   },
   {
     src: "/projetos/nara.svg",
     alt: "Dra Nara",
+    slug: "dra-nara",
     cols: "md:col-span-3 col-span-3 row-span-2",
   },
 ];
@@ -101,6 +119,29 @@ const Sobre = () => {
                         media="(max-width: 767px)"
                         srcSet={projeto.srcMobile}
                       />
+                      <a
+                        href={`https://cases.bmouse.com.br/${projeto.slug}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src={projeto.src}
+                          alt={projeto.alt}
+                          fill
+                          className={`transition-transform duration-300 ${
+                            isElisangela
+                              ? "object-cover"
+                              : "hover:scale-105 object-cover"
+                          }`}
+                        />
+                      </a>
+                    </picture>
+                  ) : (
+                    <a
+                      href={`https://cases.bmouse.com.br/${projeto.slug}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Image
                         src={projeto.src}
                         alt={projeto.alt}
@@ -111,18 +152,7 @@ const Sobre = () => {
                             : "hover:scale-105 object-cover"
                         }`}
                       />
-                    </picture>
-                  ) : (
-                    <Image
-                      src={projeto.src}
-                      alt={projeto.alt}
-                      fill
-                      className={`transition-transform duration-300 ${
-                        isElisangela
-                          ? "object-cover"
-                          : "hover:scale-105 object-cover"
-                      }`}
-                    />
+                    </a>
                   )}
                 </div>
               </div>
