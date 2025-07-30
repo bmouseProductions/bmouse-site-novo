@@ -7,6 +7,44 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import Image from "next/image";
 
+const depoimentos = [
+  {
+    nome: "Dra. Nara Vieira",
+    especialidade: "Dermatologista",
+    imagem: "/nara.webp",
+    texto:
+      "A BMouse me ajuda a levar informação de qualidade para as pessoas por meio das minhas redes sociais.",
+  },
+  {
+    nome: "Jayme Monjardim",
+    especialidade: "Diretor de televisão e cinema",
+    imagem: "/jayme.webp",
+    texto:
+      "A parceria com a BMouse é essencial, porque me ajuda a definir meus objetivos com clareza e a alcançá-los com estratégia.",
+  },
+  {
+    nome: "Dra. Elisângela Menezes",
+    especialidade: "Alergista e Imunologista / Pediatra",
+    imagem: "/elisangela.svg",
+    texto:
+      "A BMouse me ajudou a conquistar independência dos convênios e a preencher minha agenda com pacientes particulares.",
+  },
+  {
+    nome: "Arlete",
+    especialidade: "Neuropsicóloga",
+    imagem: "/arlete.webp",
+    texto:
+      "A BMouse conseguiu traduzir, na identidade visual que criou para mim, toda a essência da minha história e do meu trabalho.",
+  },
+  {
+    nome: "Dra. Renata Caldeira",
+    especialidade: "Geriatra",
+    imagem: "/renata.webp",
+    texto:
+      "A BMouse me ajudou a atrair muito mais pacientes, com um trabalho incrível que apresentou minha especialidade de forma leve, eficiente e estratégica.",
+  },
+];
+
 const Projetos = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -44,30 +82,25 @@ const Projetos = () => {
           1024: { slidesPerView: 2 },
         }}
       >
-        {[1, 2, 3].map((i) => (
+        {depoimentos.map((dep, i) => (
           <SwiperSlide key={i}>
             <div className="w-full rounded-xl border border-gray-300 p-6 md:p-8 bg-white shadow-sm mx-auto max-w-xl">
-              <p className="italic text-black text-lg mb-2">
-                Lorem ipsum dolor
-              </p>
               <p className="text-gray-700 mb-6 leading-relaxed text-sm sm:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse ultricies, felis iaculis ornare malesuada, lectus
-                tellus egestas elit, vel pretium quam sem ut sem.
+                {dep.texto}
               </p>
 
               <div className="flex items-center gap-4 flex-wrap sm:flex-nowrap">
                 <div className="w-16 h-16 relative overflow-hidden rounded-full shrink-0">
                   <Image
-                    src="/elisangela.svg"
-                    alt="Dra. Elisangela"
+                    src={dep.imagem}
+                    alt={dep.nome}
                     fill
                     className="object-cover rounded-full"
                   />
                 </div>
                 <div className="flex-1">
-                  <p className="font-semibold text-gray-900">Dra. Elisangela</p>
-                  <p className="text-gray-500 text-sm">Alergista e Pediatra</p>
+                  <p className="font-semibold text-gray-900">{dep.nome}</p>
+                  <p className="text-gray-500 text-sm">{dep.especialidade}</p>
                 </div>
                 <a
                   href="#"
