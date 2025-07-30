@@ -23,6 +23,7 @@ const projetos = [
   {
     src: "/projetos/sele.png",
     srcMobile: "/mobile/sele.png",
+    slug: "selecao-brasileira",
     alt: "Seleção Brasileira",
     cols: "md:col-span-2 md:row-span-3 col-span-3 row-span-1",
   },
