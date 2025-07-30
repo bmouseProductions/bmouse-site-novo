@@ -3,16 +3,16 @@ import Image from "next/image";
 
 const projetos = [
   {
-    src: "/projetos/tom.svg",
-    alt: "Palestra",
+    src: "/projetos/sorriso.png",
+    alt: "Força de um sorriso",
     cols: "md:col-span-2 md:row-span-2 row-span-1 col-span-3",
   },
-  { src: "/projetos/renata.svg", alt: "Renata Caldeira", cols: "col-span-3" },
-  { src: "/projetos/junio.svg", alt: "JM", cols: "col-span-3" },
+  { src: "/projetos/sorridents.svg", alt: "Sorridents", cols: "col-span-3" },
+  { src: "/projetos/jayme.png", alt: "Jayme monjardim", cols: "col-span-3" },
   {
-    src: "/projetos/elisangela.svg",
-    srcMobile: "/mobile/elis-mobile.png",
-    alt: "Disângela Menezes",
+    src: "/projetos/sele.png",
+    srcMobile: "/mobile/sele.png",
+    alt: "Seleção Brasileira",
     cols: "md:col-span-2 md:row-span-3 col-span-3 row-span-1",
   },
   {
@@ -21,19 +21,35 @@ const projetos = [
     cols: "col-span-3 md:row-span-3 row-span-1",
   },
   {
-    src: "/projetos/nara.svg",
-    alt: "Nara",
+    src: "/projetos/gio.png",
+    alt: "GioLaser",
     cols: "col-span-3 md:row-span-2 row-span-1",
   },
   {
-    src: "/projetos/sorridents.svg",
-    alt: "Sorridents",
+    src: "/projetos/naso.png",
+    alt: "Naso",
     cols: "md:col-span-2 col-span-3 row-span-1",
   },
   {
-    src: "/projetos/gio.svg",
-    alt: "Outdoor Roxo",
+    src: "/projetos/renata.svg",
+    alt: "Renata",
     cols: "md:col-span-2 col-span-3 row-span-1",
+  },
+  {
+    src: "/projetos/elisangela.svg",
+    srcMobile: "/mobile/elis-mobile.png",
+    alt: "Disângela Menezes",
+    cols: "md:col-span-2 md:row-span-3 col-span-3 row-span-1",
+  },
+  {
+    src: "/projetos/junio.svg",
+    alt: "Junio moreto",
+    cols: "md:col-span-3 col-span-3 row-span-2",
+  },
+  {
+    src: "/projetos/nara.svg",
+    alt: "Dra Nara",
+    cols: "md:col-span-3 col-span-3 row-span-2",
   },
 ];
 
