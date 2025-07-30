@@ -13,12 +13,12 @@ const projetos = [
     src: "/projetos/sele.png",
     srcMobile: "/mobile/sele.png",
     alt: "Seleção Brasileira",
-    cols: "md:col-span-2 md:row-span-3 col-span-3 row-span-1",
+    cols: "md:col-span-1 md:row-span-3 col-span-3 row-span-1",
   },
   {
     src: "/projetos/bomd.svg",
     alt: "Bomd+",
-    cols: "col-span-3 md:row-span-3 row-span-1",
+    cols: "col-span-4 md:row-span-3 row-span-1",
   },
   {
     src: "/projetos/gio.png",
