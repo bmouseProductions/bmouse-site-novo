@@ -1,4 +1,5 @@
 "use client";
+import { useState, useEffect, useCallback } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -14,6 +15,7 @@ const depoimentos = [
     imagem: "/nara.webp",
     texto:
       "A BMouse me ajuda a levar informação de qualidade para as pessoas por meio das minhas redes sociais.",
+    vimeoId: "1094378627",
   },
   {
     nome: "Jayme Monjardim",
@@ -21,6 +23,7 @@ const depoimentos = [
     imagem: "/jayme.webp",
     texto:
       "A parceria com a BMouse é essencial, porque me ajuda a definir meus objetivos com clareza e a alcançá-los com estratégia.",
+    vimeoId: "1094112952",
   },
   {
     nome: "Dra. Elisângela Menezes",
@@ -28,6 +31,7 @@ const depoimentos = [
     imagem: "/elisangela.svg",
     texto:
       "A BMouse me ajudou a conquistar independência dos convênios e a preencher minha agenda com pacientes particulares.",
+    vimeoId: "1094392910",
   },
   {
     nome: "Arlete",
@@ -35,6 +39,7 @@ const depoimentos = [
     imagem: "/arlete.webp",
     texto:
       "A BMouse conseguiu traduzir, na identidade visual que criou para mim, toda a essência da minha história e do meu trabalho.",
+    vimeoId: "1094379992",
   },
   {
     nome: "Dra. Renata Caldeira",
@@ -42,10 +47,83 @@ const depoimentos = [
     imagem: "/renata.webp",
     texto:
       "A BMouse me ajudou a atrair muito mais pacientes, com um trabalho incrível que apresentou minha especialidade de forma leve, eficiente e estratégica.",
+    vimeoId: "1094402086",
   },
 ];
 
+const Modal: React.FC<{
+  vimeoId: string | null;
+  onClose: () => void;
+  isOpen: boolean;
+}> = ({ vimeoId, onClose, isOpen }) => {
+  const handleKey = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    },
+    [onClose]
+  );
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+      window.addEventListener("keydown", handleKey);
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", handleKey);
+    };
+  }, [isOpen, handleKey]);
+
+  if (!isOpen || !vimeoId) return null;
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4"
+      aria-modal="true"
+      role="dialog"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+    >
+      <div className="relative w-full max-w-3xl bg-white rounded-2xl shadow-xl overflow-hidden">
+        <button
+          aria-label="Fechar"
+          className="absolute top-3 right-3 z-10 bg-gray-100 hover:bg-gray-200 rounded-full p-2"
+          onClick={onClose}
+        >
+          ✕
+        </button>
+        <div className="aspect-video w-full">
+          <iframe
+            src={`https://player.vimeo.com/video/${vimeoId}?title=0&byline=0&portrait=0`}
+            title="Depoimento"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Projetos = () => {
+  const [activeVimeo, setActiveVimeo] = useState<string | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = (vimeoId: string) => {
+    setActiveVimeo(vimeoId);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setTimeout(() => setActiveVimeo(null), 200);
+  };
+
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="mb-10 text-center md:text-left">
@@ -102,17 +180,20 @@ const Projetos = () => {
                   <p className="font-semibold text-gray-900">{dep.nome}</p>
                   <p className="text-gray-500 text-sm">{dep.especialidade}</p>
                 </div>
-                <a
-                  href="#"
+                <button
+                  onClick={() => openModal(dep.vimeoId)}
                   className="bg-black text-white text-sm px-4 py-2 rounded hover:opacity-90 whitespace-nowrap"
+                  aria-label={`Ver vídeo de depoimento de ${dep.nome}`}
                 >
                   Saber Mais
-                </a>
+                </button>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <Modal vimeoId={activeVimeo} isOpen={isOpen} onClose={closeModal} />
     </section>
   );
 };
