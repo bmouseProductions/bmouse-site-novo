@@ -15,7 +15,8 @@ const depoimentos = [
     imagem: "/nara.webp",
     texto:
       "A BMouse me ajuda a levar informação de qualidade para as pessoas por meio das minhas redes sociais.",
-    vimeoId: "1094378627",
+    videoUrl:
+      "https://player.vimeo.com/video/1094378627?h=c82b020341&badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     nome: "Jayme Monjardim",
@@ -23,7 +24,8 @@ const depoimentos = [
     imagem: "/jayme.webp",
     texto:
       "A parceria com a BMouse é essencial, porque me ajuda a definir meus objetivos com clareza e a alcançá-los com estratégia.",
-    vimeoId: "1094112952",
+    videoUrl:
+      "https://player.vimeo.com/video/1094112952?h=aa03064fb0&badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     nome: "Dra. Elisângela Menezes",
@@ -31,7 +33,8 @@ const depoimentos = [
     imagem: "/elisangela.svg",
     texto:
       "A BMouse me ajudou a conquistar independência dos convênios e a preencher minha agenda com pacientes particulares.",
-    vimeoId: "1094392910",
+    videoUrl:
+      "https://player.vimeo.com/video/1094392910?h=0bb57d238f&badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     nome: "Arlete",
@@ -39,7 +42,8 @@ const depoimentos = [
     imagem: "/arlete.webp",
     texto:
       "A BMouse conseguiu traduzir, na identidade visual que criou para mim, toda a essência da minha história e do meu trabalho.",
-    vimeoId: "1094379992",
+    videoUrl:
+      "https://player.vimeo.com/video/1094379992?h=b7083fe86a&badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
     nome: "Dra. Renata Caldeira",
@@ -47,15 +51,16 @@ const depoimentos = [
     imagem: "/renata.webp",
     texto:
       "A BMouse me ajudou a atrair muito mais pacientes, com um trabalho incrível que apresentou minha especialidade de forma leve, eficiente e estratégica.",
-    vimeoId: "1094402086",
+    videoUrl:
+      "https://player.vimeo.com/video/1094402086?h=921fa2c5c5&badge=0&autopause=0&player_id=0&app_id=58479",
   },
 ];
 
 const Modal: React.FC<{
-  vimeoId: string | null;
+  videoUrl: string | null;
   onClose: () => void;
   isOpen: boolean;
-}> = ({ vimeoId, onClose, isOpen }) => {
+}> = ({ videoUrl, onClose, isOpen }) => {
   const handleKey = useCallback(
     (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -76,7 +81,11 @@ const Modal: React.FC<{
     };
   }, [isOpen, handleKey]);
 
-  if (!isOpen || !vimeoId) return null;
+  if (!isOpen || !videoUrl) return null;
+
+  // garantir autoplay e esconder elementos extras
+  const separator = videoUrl.includes("?") ? "&" : "?";
+  const src = `${videoUrl}${separator}autoplay=1&title=0&byline=0&portrait=0`;
 
   return (
     <div
@@ -97,7 +106,7 @@ const Modal: React.FC<{
         </button>
         <div className="aspect-video w-full">
           <iframe
-            src={`https://player.vimeo.com/video/${vimeoId}?title=0&byline=0&portrait=0`}
+            src={src}
             title="Depoimento"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
@@ -111,17 +120,17 @@ const Modal: React.FC<{
 };
 
 const Projetos = () => {
-  const [activeVimeo, setActiveVimeo] = useState<string | null>(null);
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
 
-  const openModal = (vimeoId: string) => {
-    setActiveVimeo(vimeoId);
+  const openModal = (videoUrl: string) => {
+    setActiveVideo(videoUrl);
     setIsOpen(true);
   };
 
   const closeModal = () => {
     setIsOpen(false);
-    setTimeout(() => setActiveVimeo(null), 200);
+    setTimeout(() => setActiveVideo(null), 200);
   };
 
   return (
@@ -181,7 +190,7 @@ const Projetos = () => {
                   <p className="text-gray-500 text-sm">{dep.especialidade}</p>
                 </div>
                 <button
-                  onClick={() => openModal(dep.vimeoId)}
+                  onClick={() => openModal(dep.videoUrl)}
                   className="bg-black text-white text-sm px-4 py-2 rounded hover:opacity-90 whitespace-nowrap"
                   aria-label={`Ver vídeo de depoimento de ${dep.nome}`}
                 >
@@ -193,7 +202,7 @@ const Projetos = () => {
         ))}
       </Swiper>
 
-      <Modal vimeoId={activeVimeo} isOpen={isOpen} onClose={closeModal} />
+      <Modal videoUrl={activeVideo} isOpen={isOpen} onClose={closeModal} />
     </section>
   );
 };
