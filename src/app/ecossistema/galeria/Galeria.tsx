@@ -200,7 +200,9 @@ const GalleryBlock = ({
       </div>
       {buttonLink && (
         <div
-          className={`mt-6 ${direction === "left" ? "md:ml-40" : "md:ml-[30rem]"}`}
+          className={`mt-6 flex justify-center md:justify-start ${
+            direction === "left" ? "md:ml-40" : "md:ml-[30rem]"
+          }`}
         >
           <a
             href={buttonLink}

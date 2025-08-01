@@ -14,7 +14,7 @@ const Servicos = () => {
         </div>
 
         <div className="gap-4 mb-16">
-          <h1 className="text-4xl sm:text-5xl uppercase leading-tight max-w-6xl mb-10 text-center md:text-left franie">
+          <h1 className="text-3xl sm:text-5xl uppercase leading-tight max-w-6xl mb-10 text-center md:text-left franie">
             Posicionamento estratégico, autoridade e legado{" "}
           </h1>
 

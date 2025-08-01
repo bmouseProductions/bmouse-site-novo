@@ -131,12 +131,12 @@ const Cases = () => {
             Explore nossos projetos e descubra como ajudamos médicos e empresas
             a alcançarem protagonismo digital.
           </span>
-          <p className="md:hidden text-md ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            pretium eu magna in ornare. Mauris a posuere lacus. Morbi a sodales
-            turpis, vitae varius nibh. Suspendisse ex metus, sollicitudin vel
-            risus eu......
-          </p>
+          <span className="text-sm mt-4 md:mt-2 max-w-md  md:block franie">
+            Transformações reais. Resultados comprovados. <br />
+            <br />
+            Explore nossos projetos e descubra como ajudamos médicos e empresas
+            a alcançarem protagonismo digital.
+          </span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 auto-rows-[180px] md:auto-rows-[200px]">
