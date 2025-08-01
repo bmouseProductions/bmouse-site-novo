@@ -125,12 +125,6 @@ const Cases = () => {
           <h1 className="text-5xl md:text-5xl font-serif uppercase leading-tight max-w-2xl  md:text-left franie">
             Cases de Sucesso
           </h1>
-          <span className="text-sm mt-4 md:mt-2 max-w-md hidden md:block franie">
-            Transformações reais. Resultados comprovados. <br />
-            <br />
-            Explore nossos projetos e descubra como ajudamos médicos e empresas
-            a alcançarem protagonismo digital.
-          </span>
           <span className="text-sm mt-4 md:mt-2 max-w-md  md:block franie">
             Transformações reais. Resultados comprovados. <br />
             <br />
