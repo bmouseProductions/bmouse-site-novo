@@ -83,42 +83,59 @@ const Modal: React.FC<{
 
   if (!isOpen || !videoUrl) return null;
 
-  // garantir autoplay e esconder elementos extras
   const separator = videoUrl.includes("?") ? "&" : "?";
   const src = `${videoUrl}${separator}autoplay=1&title=0&byline=0&portrait=0`;
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4"
+      className="fixed inset-0 z-10 flex items-center justify-center bg-black/80 px-1"
       aria-modal="true"
       role="dialog"
       onClick={(e) => {
-        if (e.target === e.currentTarget) onClose();
+        if (e.target === e.currentTarget) {
+          onClose();
+        }
       }}
     >
-      <div className="relative w-full max-w-3xl bg-white rounded-2xl shadow-xl overflow-hidden">
+      <div
+        className={`
+          relative 
+          w-full 
+          overflow-hidden 
+          flex 
+          flex-col 
+          bg-transparent 
+          sm:rounded-2xl 
+          sm:bg-white 
+          sm:max-w-3xl
+        `}
+        style={{ maxHeight: "100vh" }}
+      >
         <button
           aria-label="Fechar"
-          className="absolute top-3 right-3 z-10 bg-gray-100 hover:bg-gray-200 rounded-full p-2"
+          className="absolute top-3 right-3 z-30 bg-gray-100 hover:bg-gray-200 rounded-full p-2"
           onClick={onClose}
         >
           ✕
         </button>
-        <div className="aspect-video w-full">
-          <iframe
-            src={src}
-            title="Depoimento"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-            className="w-full h-full"
-            loading="lazy"
-          ></iframe>
+
+        {/* Vídeo: mobile ocupa quase toda a viewport */}
+        <div className="w-full flex-1 flex items-center justify-center">
+          <div className="relative w-full h-[calc(100vh-1.5rem)] sm:aspect-video sm:h-auto">
+            <iframe
+              src={src}
+              title="Depoimento"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
 const Projetos = () => {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
