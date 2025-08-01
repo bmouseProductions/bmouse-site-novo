@@ -92,7 +92,7 @@ const Sobre = () => {
             Explore nossos projetos e descubra como ajudamos médicos e empresas
             a alcançarem protagonismo digital.
           </span>
-          <p className="md:hidden text-md">
+          <p className="md:hidden text-md franie">
             Transformações reais. Resultados comprovados.
             <br />
             <br />
