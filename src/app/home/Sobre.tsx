@@ -62,13 +62,13 @@ const projetos = [
     src: "/projetos/junio.svg",
     alt: "Junio moreto",
     slug: "dr-junio",
-    cols: "md:col-span-3 col-span-3 row-span-2",
+    cols: "md:col-span-3 col-span-3 row-span-1",
   },
   {
     src: "/projetos/nara.svg",
     alt: "Dra Nara",
     slug: "dra-nara",
-    cols: "md:col-span-3 col-span-3 row-span-2",
+    cols: "md:col-span-3 col-span-3 row-span-1",
   },
 ];
 
