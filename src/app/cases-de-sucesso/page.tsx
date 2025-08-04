@@ -109,6 +109,18 @@ const projetos = [
     slug: "olhar-certo",
     cols: "md:col-span-5 md:row-span-3 col-span-3 row-span-1",
   },
+  {
+    src: "/projetos/mira.png",
+    alt: "MIRA",
+    slug: "mira",
+    cols: "md:col-span-2 md:row-span-2 row-span-1 col-span-3",
+  },
+  {
+    src: "/projetos/WHG.png",
+    alt: "whg",
+    slug: "WHG",
+    cols: "md:col-span-3 md:row-span-2 row-span-1 col-span-3",
+  },
 ];
 
 const Cases = () => {
