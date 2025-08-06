@@ -110,22 +110,27 @@ const projetos = [
     cols: "md:col-span-5 md:row-span-3 col-span-3 row-span-1",
   },
   {
-    src: "/projetos/WHG.png",
-    alt: "whg",
-    slug: "WHG",
-    cols: "md:col-span-3 md:row-span-3 row-span-1 col-span-3",
-  },
-  {
     src: "/projetos/mira.png",
     alt: "MIRA",
     slug: "mira",
-    cols: "md:col-span-2 md:row-span-1 row-span-1 col-span-3",
+    cols: "md:col-span-2 md:row-span-2 row-span-1 col-span-3",
   },
-
+  {
+    src: "/projetos/WHG.png",
+    alt: "whg",
+    slug: "WHG",
+    cols: "md:col-span-3 md:row-span-2 row-span-1 col-span-3",
+  },
   {
     src: "/projetos/one.png",
     alt: "One odontologia",
     slug: "one-odontologia",
+    cols: "md:col-span-3 md:row-span-2 row-span-1 col-span-3",
+  },
+  {
+    src: "/projetos/mid.png",
+    alt: "Medic Imagem",
+    slug: "mid",
     cols: "md:col-span-2 md:row-span-2 row-span-1 col-span-3",
   },
 ];
