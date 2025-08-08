@@ -10,10 +10,11 @@ const projetos = [
     cols: "md:col-span-2 md:row-span-2 row-span-1 col-span-3",
   },
   {
-    src: "/projetos/sorridents.svg",
-    alt: "Renata Caldeira",
+    src: "/projetos/sorridents-mobile.png",
+    srcMobile: "/projetos/sorridents-mobile.png",
+    alt: "Sorridents",
     cols: "col-span-3",
-    slug: "dra-renata-caldeira",
+    slug: "Sorridents",
   },
   {
     src: "/projetos/jayme.png",
@@ -29,7 +30,8 @@ const projetos = [
     slug: "selecao-brasileira",
   },
   {
-    src: "/projetos/bomd.svg",
+    src: "/projetos/bomde.png",
+    srcMobile: "/projetos/bomde.png",
     alt: "Bomd+",
     cols: "col-span-3 md:row-span-3 row-span-1",
     slug: "bomd",
