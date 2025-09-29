@@ -9,7 +9,7 @@ const BackTo = () => {
       <div>
         {/* WhatsApp - canto inferior esquerdo */}
         <a
-          href="https://wa.me/5534999306776?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%2C%20quero%20saber%20mais%20sobre%20o%20trabalho%20do%20Grupo%20BMouse"
+          href="https://wa.me/5534999869888?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%2C%20quero%20saber%20mais%20sobre%20o%20trabalho%20do%20Grupo%20BMouse"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 left-6 z-50 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition-all duration-300"
