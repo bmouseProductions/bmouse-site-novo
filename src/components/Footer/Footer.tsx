@@ -39,7 +39,8 @@ const Footer = () => {
 
         {/* Coluna 3 - Contato */}
         <div className="flex-1 text-center md:text-left mx-auto space-y-3 text-sm text-black franie">
-          <p>📍 Rua Doutor José Olímpio Borges, 134, Centro, Patos de Minas</p>
+          <p>📍 R. Via Genova, 165 - Jardim Vila Paradiso, Indaiatuba - São Paulo</p>
+          <p>📍R. Formiga, 565 B - Aurélio Caixeta, Patos de Minas - Minas Gerais</p>
           <p>
             ✉️{" "}
             <a
