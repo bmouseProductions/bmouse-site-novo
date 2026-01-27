@@ -8,7 +8,7 @@ import "@/lib/fontawesome";
 import Footer from "@/components/Footer/Footer";
 import BackTo from "../components/backto/BackTo";
 
-const GTM_ID = "GTM-NKSMBN88";
+const GTM_ID = "GTM-58GR3XH4";
 
 export default function RootLayout({
   children,
