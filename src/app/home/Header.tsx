@@ -28,8 +28,8 @@ const Header = () => {
         </div>
         <div className="gap-4 md:mb-16 mx-auto">
           <h1 className="text-3xl md:text-5xl uppercase leading-tight max-w-6xl px-4 md:text-left franie">
-            O MAIOR ECOSSISTEMA PARA PROFISSIONAIS DA{" "}
-            <span className="font-bold">SAÚDE DO BRASIL</span>
+            CONSTRUÍMOS MARCA, PRESENÇA E PERCEPÇÃO{" "}
+            <span className="font-bold">PARA PROFISSIONAIS EXTRAORDINÁRIOS.</span>
           </h1>
           <div className="md:flex md:gap-32  justify-center">
             <Image
