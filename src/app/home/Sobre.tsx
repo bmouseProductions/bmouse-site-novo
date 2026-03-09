@@ -44,7 +44,7 @@ const projetos = [
     src: "/projetos/rodrigo-moraes/rodrigo-desk.png",
     alt: "Rodrigo Moraes",
     cols: "md:col-span-3 md:row-span-2 row-span-1 col-span-3",
-    slug: "rodrigo-Moraes",
+    slug: "rodrigo-moraes",
   },
   {
     src: "/projetos/sorriso.jpg",
