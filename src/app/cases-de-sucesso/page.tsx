@@ -13,7 +13,7 @@ const projetos = [
     src: "/projetos/corte/corte-desk.png",
     srcMobile: "/projetos/corte/corte-desk.png",
     alt: "Wanderley Nunes – Entre Cortes e Sabores",
-    slug: "entre-cortes-e-sabores",
+    slug: "wanderley-nunes",
     cols: "col-span-3 md:row-span-2 row-span-1",
   },
   {
@@ -36,17 +36,22 @@ const projetos = [
     slug: "nathy-schneider",
   },
   {
-    src: "/projetos/rodrigo/rodrigo-desk.png",
-    srcMobile: "/projetos/rodrigo/rodrigo-desk.png",
+    src: "/projetos/rodrigo-mangaravite/rodrigo-mangaravite.jpeg",
     alt: "Dr. Rodrigo Mangaravite",
     cols: "col-span-3 md:row-span-2 row-span-1",
     slug: "rodrigo-mangaravite",
   },
   {
+    src: "/projetos/rodrigo-moraes/rodrigo-desk.png",
+    alt: "Rodrigo Moraes",
+    cols: "md:col-span-3 md:row-span-2 row-span-1 col-span-3",
+    slug: "rodrigo-Moraes",
+  },
+  {
     src: "/projetos/sorriso.jpg",
     alt: "Força de um sorriso",
     slug: "filme-a-forca-de-um-sorriso-grupo-salus",
-    cols: "md:col-span-3 md:row-span-2 row-span-1 col-span-3",
+    cols: "md:col-span-2 md:row-span-2 row-span-1 col-span-3",
   },
   {
     src: "/projetos/sorridents-mobile.webp",
@@ -58,7 +63,7 @@ const projetos = [
   {
     src: "/projetos/jayme.webp",
     alt: "Jayme monjardim",
-    cols: "col-span-2",
+    cols: "col-span-3",
     slug: "jayme-monjardim",
   },
   {

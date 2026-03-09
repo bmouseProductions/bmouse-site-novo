@@ -63,15 +63,6 @@ const depoimentos = [
     videoUrl:
       "https://player.vimeo.com/video/1164125072?h=aef8ed4f43&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
   },
-  {
-    nome: "Dra. Renata Caldeira",
-    especialidade: "Geriatra",
-    imagem: "/renata.webp",
-    texto:
-      "A BMouse me ajudou a atrair muito mais pacientes, com um trabalho incrível que apresentou minha especialidade de forma leve, eficiente e estratégica.",
-    videoUrl:
-      "https://player.vimeo.com/video/1094402086?h=921fa2c5c5&badge=0&autopause=0&player_id=0&app_id=58479",
-  },
 ];
 
 const Modal: React.FC<{

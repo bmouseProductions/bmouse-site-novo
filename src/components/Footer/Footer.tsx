@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-linear-to-b from-[#0000ff] to-[#000000] mt-30">
+    <footer className="bg-linear-to-b from-[#0000ff] to-[#000000]">
       <div className="text-white rounded-t-2xl px-6 md:px-16 py-12  justify-between gap-12 flex flex-col md:flex-row gap-y-12 md:gap-y-0 gap-x-12 container mx-auto">
         {/* Coluna 1 - Logo e texto */}
         <div className="flex-1 text-center md:text-left">

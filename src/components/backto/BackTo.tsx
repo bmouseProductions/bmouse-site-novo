@@ -40,7 +40,6 @@ const BackTo = () => {
           </svg>
         </button>
       </div>
-      ;
     </div>
   );
 };

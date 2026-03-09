@@ -29,12 +29,12 @@ const Header = () => {
         </div>
         <div className="gap-4 md:mb-16 mx-auto">
           <h1 className="text-3xl md:text-5xl uppercase leading-tight max-w-6xl px-4 md:text-left franie">
-            Construímos autoridade a partir {" "}
+            Construímos autoridade a partir da{" "}
             <span className="font-bold">sua trajetória.</span>
           </h1>
           <div className="md:flex md:gap-32  justify-center">
             <Image
-              src="/header-black.png"
+              src="/header-home.png"
               alt="Grupo Bmouse"
               className="px-5 py-10"
               width={720}
