@@ -2,18 +2,18 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#D9D9D9]  mt-30">
-      <div className="text-black rounded-t-2xl px-6 md:px-16 py-12  justify-between gap-12 flex flex-col md:flex-row gap-y-12 md:gap-y-0 gap-x-12 container mx-auto">
+    <footer className="bg-linear-to-b from-[#0000ff] to-[#000000] mt-30">
+      <div className="text-white rounded-t-2xl px-6 md:px-16 py-12  justify-between gap-12 flex flex-col md:flex-row gap-y-12 md:gap-y-0 gap-x-12 container mx-auto">
         {/* Coluna 1 - Logo e texto */}
         <div className="flex-1 text-center md:text-left">
           <Image
-            src="/bmouse-logo.svg"
+            src="/bmouse-logo-branca.svg"
             alt="Logo"
             width={127.77}
             height={27.85}
             className="h-8 mb-4 mx-auto md:mx-0"
           />
-          <p className="text-sm text-zinc-600 max-w-xs franie">
+          <p className="text-sm text-white max-w-xs franie">
             Criamos posicionamento, presença e reputação.
           </p>
         </div>
@@ -21,7 +21,7 @@ const Footer = () => {
         {/* Coluna 2 - Links */}
         <div className="flex-1 text-center md:text-left hidden md:block">
           <h3 className="font-extralight mb-4 franie">Explore</h3>
-          <ul className="space-y-2 text-sm text-zinc-600">
+          <ul className="space-y-2 text-sm text-white">
             <li>
               <a href="/ecossistema">Ecossistema</a>
             </li>
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
         {/* Coluna 3 - Contato */}
-        <div className="flex-1 text-center md:text-left mx-auto space-y-3 text-sm text-black franie">
+        <div className="flex-1 text-center md:text-left mx-auto space-y-3 text-sm text-white franie">
           <p>📍 Rua Via Genova, 165 - Jardim Vila Paradiso, Indaiatuba - São Paulo</p>
           <p>📍R. Formiga, 565 B - Aurélio Caixeta, Patos de Minas - Minas Gerais</p>
           <p>

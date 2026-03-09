@@ -5,119 +5,72 @@ import Agencia from "@/app/home/Agencia";
 const blocks = [
   {
     direction: "left",
-
     images: [
-      { src: "/bmouse-eco.png", width: 722, height: 555, alt: "Bmouse" },
-      { src: "/cellphone.png", width: 277, height: 555, alt: "Celular bmouse" },
-      { src: "/cardapio.png", width: 277, height: 555, alt: "Cardápio bmouse" },
+      { src: "/ecossistema/bmouse-agencia/quadrada.png", width: 722, height: 555, alt: "Bmouse" },
+      { src: "/ecossistema/bmouse-agencia/retangular1.png", width: 277, height: 555, alt: "Celular bmouse" },
+      { src: "/ecossistema/bmouse-agencia/retangular2.png", width: 277, height: 555, alt: "Cardápio bmouse" },
     ],
-    title: "Agência Bmouse - Marketing estratégico para a saúde.",
-    text: "Posicionamento, autoridade e conteúdo que gera resultado para quem cuida de vidas.",
+    title: "Agência BMouse - Marketing Estratégico.",
+    text: "Posicionamento, autoridade e conteúdo que gera resultado.",
   },
   {
     direction: "right",
-
     images: [
-      { src: "/camera.png", width: 277, height: 555, alt: "Camera" },
-      { src: "/camera2.png", width: 277, height: 555, alt: "Camera 2" },
-      { src: "/studio.png", width: 722, height: 555, alt: "Studio" },
+      { src: "/ecossistema/bmouse-studio/quadrada.png", width: 722, height: 555, alt: "Camera" },
+      { src: "/ecossistema/bmouse-studio/retangular1.png", width: 277, height: 555, alt: "Camera 2" },
+      { src: "/ecossistema/bmouse-studio/retangular2.png", width: 277, height: 555, alt: "Studio" },
     ],
     title: "Studios Bmouse - Audiovisual de alto padrão e estética memorável.",
     text: "Transformamos histórias, marcas e profissionais em narrativas visuais que encantam, engajam e elevam sua autoridade.",
   },
   {
     direction: "left",
-    buttonLink: "https://saudeempreende.com.br/doctalk/",
-    buttonText: "",
     images: [
-      { src: "/doctalk.png", width: 722, height: 555, alt: "Doctalk" },
-      {
-        src: "/camera-docktalk.png",
-        width: 277,
-        height: 555,
-        alt: "Camera Doctalk",
-      },
-      {
-        src: "/phone-doctalk.png",
-        width: 277,
-        height: 555,
-        alt: "Phone Doctalk",
-      },
+      { src: "/ecossistema/doctalk/quadrada.png", width: 722, height: 555, alt: "Doctalk" },
+      { src: "/ecossistema/doctalk/retangular1.png", width: 277, height: 555, alt: "Camera Doctalk" },
+      { src: "/ecossistema/doctalk/retangular2.png", width: 277, height: 555, alt: "Phone Doctalk" },
     ],
-    title: "DocTalk - Podcast que dá voz aos protagonistas da saúde.",
-    text: "Dicas práticas de empreendedorismo, conversas sobre os temas mais relevantes da saúde e trajetórias inspiradoras de quem está fazendo a diferença no setor.",
+    title: "DocTalk - Onde o extraordinário ganha voz.",
+    text: "O podcast que revela as histórias de quem constrói legado e impacto real.",
   },
   {
     direction: "right",
-    buttonLink: "https://saudeempreende.com.br/",
-    buttonText: "",
     images: [
-      { src: "/ecossistema/saude.png", width: 277, height: 555, alt: "Camera" },
-      {
-        src: "/ecossistema/saude-phone.png",
-        width: 277,
-        height: 555,
-        alt: "Camera 2",
-      },
-      {
-        src: "/ecossistema/laptop.png",
-        width: 722,
-        height: 555,
-        alt: "Studio",
-      },
+      { src: "/ecossistema/protagonistas/quadrada.png", width: 722, height: 555, alt: "Bmouse" },
+      { src: "/ecossistema/protagonistas/retangular1.png", width: 277, height: 555, alt: "Celular bmouse" },
+      { src: "/ecossistema/protagonistas/retangular2.png", width: 277, height: 555, alt: "Cardápio bmouse" },
     ],
-    title:
-      "SaudeEmpreende.com - Portal de conteúdo e conexão para profissionais",
-    text: "Conteúdos estratégicos, notícias relevantes e conexões valiosas para profissionais que querem liderar o futuro da saúde com visão empreendedora.",
+    title: "Protagonistas.",
+    text: "O podcast que dá voz a mulheres reais que se destacam em diferentes áreas da vida.",
   },
   {
     direction: "left",
-    buttonLink: "https://bmouse.com",
-    buttonText: "",
     images: [
-      { src: "/ecossistema/sea.png", width: 722, height: 555, alt: "Camera" },
-      {
-        src: "/ecossistema/sea-card.png",
-        width: 277,
-        height: 555,
-        alt: "Camera 2",
-      },
-      {
-        src: "/ecossistema/sea-card2.png",
-        width: 277,
-        height: 555,
-        alt: "Studio",
-      },
+      { src: "/ecossistema/saude-empreende/quadrada.png", width: 722, height: 555, alt: "Camera" },
+      { src: "/ecossistema/saude-empreende/retangular1.png", width: 277, height: 555, alt: "Camera 2" },
+      { src: "/ecossistema/saude-empreende/retangular2.png", width: 277, height: 555, alt: "Studio" },
     ],
-    title: "SE Academy - Infoprodutos e educação digital para médicos.",
-    text: "Plataforma que produz, lança e potencializa cursos de profissionais da saúde, transformando conhecimento técnico em produtos digitais de alto impacto.",
+    title: "SaudeEmpreende.com - Portal de conteúdo e conexão para profissionais",
+    text: "Conteúdos estratégicos, notícias relevantes e conexões valiosas para profissionais que querem liderar o futuro da saúde com visão empreendedora.",
   },
   {
     direction: "right",
-    buttonLink: "https://saudeempreende.com.br/experience/",
-    buttonText: "",
     images: [
-      {
-        src: "/ecossistema/woman-exp.png",
-        width: 277,
-        height: 555,
-        alt: "Camera",
-      },
-      {
-        src: "/ecossistema/tannure.png",
-        width: 277,
-        height: 555,
-        alt: "Camera 2",
-      },
-      {
-        src: "/ecossistema/exp.png",
-        width: 722,
-        height: 555,
-        alt: "Studio",
-      },
+      { src: "/ecossistema/atlas/quadrada.png", width: 722, height: 555, alt: "Camera" },
+      { src: "/ecossistema/atlas/retangular1.png", width: 277, height: 555, alt: "Camera 2" },
+      { src: "/ecossistema/atlas/retangular2.png", width: 277, height: 555, alt: "Studio" },
     ],
-    title:
-      "Saúde Empreende Experience - O maior evento de empreendedorismo da saúde no Brasil.",
+    title: "Círculo ATLAS.",
+    text: "Infoprodutos, comunidades e eventos dedicados a mentes extraordinárias e profissionais de alta performance.",
+  },
+  {
+    direction: "left",
+    images: [
+      { src: "/ecossistema/saude-empreende-exp/quadrada.png", width: 722, height: 555, alt: "Camera" },
+      { src: "/ecossistema/saude-empreende-exp/retangular1.png", width: 277, height: 555, alt: "Camera 2" },
+      { src: "/ecossistema/saude-empreende-exp/retangular2.png", width: 277, height: 555, alt: "Studio" },
+    ],
+    title: "Saúde Empreende Experience - O maior evento de empreendedorismo da saúde no Brasil.",
     text: "Eventos que reúnem os nomes mais relevantes do setor em encontros presenciais que inspiram, provocam e aceleram a transformação da saúde no Brasil.",
   },
 ];
@@ -127,8 +80,6 @@ const GalleryBlock = ({
   title,
   text,
   direction,
-  buttonLink,
-  buttonText,
 }: (typeof blocks)[0]) => {
   const bigImage = images.find((img) => img.width === 722);
   const smallImages = images.filter((img) => img.width !== 722);
@@ -198,22 +149,6 @@ const GalleryBlock = ({
           <span className="text-sm md:text-base text-gray-700">{text}</span>
         </p>
       </div>
-      {buttonLink && (
-        <div
-          className={`mt-6 flex justify-center md:justify-start ${
-            direction === "left" ? "md:ml-40" : "md:ml-[30rem]"
-          }`}
-        >
-          <a
-            href={buttonLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-black text-white px-6 py-3 transition franie"
-          >
-            {buttonText || "Saiba mais"}
-          </a>
-        </div>
-      )}
     </div>
   );
 };

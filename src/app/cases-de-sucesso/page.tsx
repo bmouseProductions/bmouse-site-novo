@@ -4,27 +4,66 @@ import Agencia from "../home/Agencia";
 
 const projetos = [
   {
+    src: "/projetos/cury/cury-desk.png",
+    alt: "The most read psichiatrist in the world",
+    slug: "augusto-cury",
+    cols: "md:col-span-5 md:row-span-2 row-span-1 col-span-3",
+  },
+  {
+    src: "/projetos/corte/corte-desk.png",
+    srcMobile: "/projetos/corte/corte-desk.png",
+    alt: "Wanderley Nunes – Entre Cortes e Sabores",
+    slug: "entre-cortes-e-sabores",
+    cols: "col-span-3 md:row-span-2 row-span-1",
+  },
+  {
+    src: "/projetos/matarazzo/matarazzo-desk.png",
+    alt: "SÉRIE: RAÍZES DE UM NOME - JAYME MONJARDIM",
+    cols: "md:col-span-2 col-span-3 row-span-1",
+    slug: "raizes-de-um-nome",
+  },
+  {
+    src: "/projetos/vivi/vivi-desk.png",
+    alt: "Vivi Mascaro",
+    cols: "md:col-span-2 col-span-3 row-span-1",
+    slug: "vivi-mascaro",
+  },
+  {
+    src: "/projetos/nathy/nathy-mobile.png",
+    srcMobile: "/projetos/nathy/nathy-desk.png",
+    alt: "Nathalia Schneider ",
+    cols: "md:col-span-2 col-span-3 md:row-span-2 row-span-1",
+    slug: "nathy-schneider",
+  },
+  {
+    src: "/projetos/rodrigo/rodrigo-desk.png",
+    srcMobile: "/projetos/rodrigo/rodrigo-desk.png",
+    alt: "Dr. Rodrigo Mangaravite",
+    cols: "col-span-3 md:row-span-2 row-span-1",
+    slug: "rodrigo-mangaravite",
+  },
+  {
     src: "/projetos/sorriso.jpg",
     alt: "Força de um sorriso",
     slug: "filme-a-forca-de-um-sorriso-grupo-salus",
-    cols: "md:col-span-2 md:row-span-2 row-span-1 col-span-3",
+    cols: "md:col-span-3 md:row-span-2 row-span-1 col-span-3",
   },
   {
     src: "/projetos/sorridents-mobile.webp",
     srcMobile: "/projetos/sorridents-mobile.webp",
     alt: "Sorridents",
-    cols: "col-span-3",
+    cols: "col-span-2",
     slug: "Sorridents",
   },
   {
     src: "/projetos/jayme.webp",
     alt: "Jayme monjardim",
-    cols: "col-span-3",
+    cols: "col-span-2",
     slug: "jayme-monjardim",
   },
   {
     src: "/projetos/sele.webp",
-    srcMobile: "/mobile/sele.webp",
+    srcMobile: "/projetos/sele.webp",
     alt: "Seleção Brasileira",
     cols: "md:col-span-2 md:row-span-3 col-span-3 row-span-1",
     slug: "selecao-brasileira",
@@ -56,7 +95,6 @@ const projetos = [
   },
   {
     src: "/projetos/dra-elis.webp",
-    srcMobile: "/mobile/dra-elis.webp",
     alt: "Disângela Menezes",
     slug: "dra-elisangela",
     cols: "md:col-span-2 md:row-span-2 row-span-1 col-span-3",
@@ -172,28 +210,30 @@ const Cases = () => {
               >
                 <div className="relative w-full h-auto aspect-video md:aspect-auto md:h-full">
                   {projeto.srcMobile ? (
-                    <picture>
-                      <source
-                        media="(max-width: 767px)"
-                        srcSet={projeto.srcMobile}
-                      />
-                      <a
-                        href={`https://cases.bmouse.com.br/${projeto.slug}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                    <a
+                      href={`https://cases.bmouse.com.br/${projeto.slug}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full h-full"
+                    >
+                      {projeto.srcMobile && (
                         <Image
-                          src={projeto.src}
+                          src={projeto.srcMobile}
                           alt={projeto.alt}
                           fill
-                          className={`transition-transform duration-300 ${
-                            isElisangela
-                              ? "object-cover"
-                              : "hover:scale-105 object-cover"
-                          }`}
+                          className="object-cover md:hidden"
                         />
-                      </a>
-                    </picture>
+                      )}
+
+                      <Image
+                        src={projeto.src}
+                        alt={projeto.alt}
+                        fill
+                        className={`object-cover ${projeto.srcMobile ? "hidden md:block" : ""} ${
+                          isElisangela ? "" : "hover:scale-105"
+                        } transition-transform duration-300`}
+                      />
+                    </a>
                   ) : (
                     <a
                       href={`https://cases.bmouse.com.br/${projeto.slug}`}

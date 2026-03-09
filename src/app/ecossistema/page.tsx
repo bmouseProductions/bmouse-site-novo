@@ -10,12 +10,13 @@ import "swiper/css/autoplay";
 import Galeria from "./galeria/Galeria";
 
 const imagens: string[] = [
-  "/carousel2/agencia.png",
-  "/carousel2/Doctalk.png",
-  "/carousel2/saude.png",
-  "/carousel2/see-pocket_1.png",
-  "/carousel2/see-logo.png",
-  "/carousel2/studio.png",
+  "/carousel-home/circulo-atlas.svg",
+  "/carousel-home/doctalk.svg",
+  "/carousel-home/grupo-bmouse.svg",
+  "/carousel-home/protagonistas.svg",
+  "/carousel-home/saude-empreende-experience-pocket.svg",
+  "/carousel-home/saude-empreende-experience.svg",
+  "/carousel-home/saude-empreende.svg",
 ];
 
 const Ecossistema = () => {
@@ -25,8 +26,8 @@ const Ecossistema = () => {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto">
             <h1 className="text-3xl md:text-5xl uppercase leading-tight max-w-6xl px-4 md:text-left franie">
-              O MAIOR ECOSSISTEMA PARA PROFISSIONAIS DA{" "}
-              <span className="font-bold">SAÚDE DO BRASIL</span>
+              O maior ecossistema para {" "}
+              <span className="font-bold">pessoas extraordinárias.</span>
             </h1>
           </div>
           <div className="-mt-20 md:mt-0 -mb-24 md:mb-0">

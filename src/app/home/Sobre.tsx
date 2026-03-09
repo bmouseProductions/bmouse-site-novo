@@ -3,6 +3,45 @@ import Image from "next/image";
 
 const projetos = [
   {
+    src: "/projetos/cury/cury-desk.png",
+    alt: "The most read psichiatrist in the world",
+    slug: "augusto-cury",
+    cols: "md:col-span-5 md:row-span-2 row-span-1 col-span-3",
+  },
+  {
+    src: "/projetos/corte/corte-desk.png",
+    srcMobile: "/projetos/corte/corte-desk.png",
+    alt: "Wanderley Nunes – Entre Cortes e Sabores",
+    slug: "entre-cortes-e-sabores",
+    cols: "col-span-3 md:row-span-2 row-span-1",
+  },
+  {
+    src: "/projetos/matarazzo/matarazzo-desk.png",
+    alt: "SÉRIE: RAÍZES DE UM NOME - JAYME MONJARDIM",
+    cols: "md:col-span-2 col-span-3 row-span-1",
+    slug: "raizes-de-um-nome",
+  },
+  {
+    src: "/projetos/vivi/vivi-desk.png",
+    alt: "Vivi Mascaro",
+    cols: "md:col-span-2 col-span-3 row-span-1",
+    slug: "vivi-mascaro",
+  },
+  {
+    src: "/projetos/nathy/nathy-mobile.png",
+    srcMobile: "/projetos/nathy/nathy-desk.png",
+    alt: "Nathalia Schneider ",
+    cols: "md:col-span-2 col-span-3 md:row-span-2 row-span-1",
+    slug: "nathy-schneider",
+  },
+  {
+    src: "/projetos/rodrigo/rodrigo-desk.png",
+    srcMobile: "/projetos/rodrigo/rodrigo-desk.png",
+    alt: "Dr. Rodrigo Mangaravite",
+    cols: "col-span-3 md:row-span-2 row-span-1",
+    slug: "rodrigo-mangaravite",
+  },
+  {
     src: "/projetos/sorriso.jpg",
     slug: "filme-a-forca-de-um-sorriso-grupo-salus",
     alt: "Força de um sorriso",
@@ -89,15 +128,13 @@ const Sobre = () => {
           <span className="text-sm mt-4 md:mt-2 max-w-md hidden md:block franie">
             Transformações reais. Resultados comprovados. <br />
             <br />
-            Explore nossos projetos e descubra como ajudamos médicos e empresas
-            a alcançarem protagonismo digital.
+            Explore nossos projetos e veja como transformamos potencial em autoridade.
           </span>
           <p className="md:hidden text-md franie">
             Transformações reais. Resultados comprovados.
             <br />
             <br />
-            Explore nossos projetos e descubra como ajudamos médicos e empresas
-            a alcançarem protagonismo digital.
+            Explore nossos projetos e veja como transformamos potencial em autoridade.
           </p>
         </div>
 

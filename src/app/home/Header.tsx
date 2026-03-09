@@ -9,12 +9,13 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
 const imagens: string[] = [
-  "/carousel2/agencia.png",
-  "/carousel2/Doctalk.png",
-  "/carousel2/saude.png",
-  "/carousel2/see-pocket_1.png",
-  "/carousel2/see-logo.png",
-  "/carousel2/studio.png",
+  "/carousel-home/circulo-atlas.svg",
+  "/carousel-home/doctalk.svg",
+  "/carousel-home/grupo-bmouse.svg",
+  "/carousel-home/protagonistas.svg",
+  "/carousel-home/saude-empreende.svg",
+  "/carousel-home/saude-empreende-experience.svg",
+  "/carousel-home/saude-empreende-experience-pocket.svg",
 ];
 
 const Header = () => {
@@ -28,8 +29,8 @@ const Header = () => {
         </div>
         <div className="gap-4 md:mb-16 mx-auto">
           <h1 className="text-3xl md:text-5xl uppercase leading-tight max-w-6xl px-4 md:text-left franie">
-            Estratégia e criatividade para transformar{" "}
-            <span className="font-bold">história em autoridade.</span>
+            Construímos autoridade a partir {" "}
+            <span className="font-bold">sua trajetória.</span>
           </h1>
           <div className="md:flex md:gap-32  justify-center">
             <Image
@@ -70,7 +71,7 @@ const Header = () => {
                   <Image
                     src={src}
                     alt={`Projeto ${index + 1}`}
-                    width={src === "/carousel2/see-logo.png" ? 100 : 180}
+                    width={src === "/carousel-home/see-logo.svg" ? 100 : 180}
                     height={80}
                     className="object-contain"
                   />

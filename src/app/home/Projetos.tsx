@@ -10,6 +10,24 @@ import Image from "next/image";
 
 const depoimentos = [
   {
+    nome: "Augusto Cury",
+    especialidade: "Psiquiatra, professor e escritor",
+    imagem: "/augusto.png",
+    texto:
+      "BMouse, uma empresa que se preocupa com a qualidade de vida do ser humano no teatro social. Isso, pra mim, me encanta e faz toda a diferença.",
+    videoUrl:
+      "https://player.vimeo.com/video/1164125034?h=967058f27f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  },
+  {
+    nome: "Wanderley Nunes",
+    especialidade: "Expert em Corte e Colorimetria",
+    imagem: "/wanderley.png",
+    texto:
+      "O Grupo BMouse me proporcionou a realização de um sonho de vida: cozinhar ao lado de vocês..",
+    videoUrl:
+      "https://player.vimeo.com/video/1167864665?h=d82acc999f&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  },
+  {
     nome: "Dra. Nara Vieira",
     especialidade: "Dermatologista",
     imagem: "/nara.webp",
@@ -28,22 +46,22 @@ const depoimentos = [
       "https://player.vimeo.com/video/1094112952?h=aa03064fb0&badge=0&autopause=0&player_id=0&app_id=58479",
   },
   {
-    nome: "Dra. Elisângela Menezes",
-    especialidade: "Alergista e Imunologista / Pediatra",
-    imagem: "/elisangela.svg",
+    nome: "Vivi Mascaro",
+    especialidade: "Jornalista, apresentadora, palestrante, empresária",
+    imagem: "/vivi.png",
     texto:
-      "A BMouse me ajudou a conquistar independência dos convênios e a preencher minha agenda com pacientes particulares.",
+      "O Grupo BMouse cuida de todos os meus conteúdos, lançamentos e podcasts. Ter esse nível de profissionalismo ao lado faz toda a diferença.",
     videoUrl:
-      "https://player.vimeo.com/video/1094392910?h=0bb57d238f&badge=0&autopause=0&player_id=0&app_id=58479",
+      "https://player.vimeo.com/video/1164124915?h=8c611e45b5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
   },
   {
-    nome: "Arlete",
-    especialidade: "Neuropsicóloga",
-    imagem: "/arlete.webp",
+    nome: "Nathalia Schneider",
+    especialidade: "Empresária",
+    imagem: "/nath.png",
     texto:
-      "A BMouse conseguiu traduzir, na identidade visual que criou para mim, toda a essência da minha história e do meu trabalho.",
+      "Trabalhar com o Grupo BMouse e suas ideias renovadoras é um privilégio. Sinto muita gratidão por todo esse profissionalismo.",
     videoUrl:
-      "https://player.vimeo.com/video/1094379992?h=b7083fe86a&badge=0&autopause=0&player_id=0&app_id=58479",
+      "https://player.vimeo.com/video/1164125072?h=aef8ed4f43&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
   },
   {
     nome: "Dra. Renata Caldeira",
@@ -167,9 +185,9 @@ const Projetos = () => {
         </div>
         <div className="text-center md:text-left max-w-2xl mx-auto md:mx-0">
           <p className="text-black text-base sm:text-lg franie leading-relaxed">
-            Transformações reais. Resultados comprovados. <br /> <br />
-            Explore nossos projetos e descubra como ajudamos médicos e empresas
-            a alcançarem protagonismo digital.
+            Resultados que constroem legado. <br /> <br />
+            Conheça as histórias de quem elevou posicionamento e presença com estratégia e direção clara. 
+            Assista aos depoimentos.
           </p>
         </div>
       </div>

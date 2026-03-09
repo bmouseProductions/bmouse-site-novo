@@ -14,12 +14,12 @@ const Agencia = () => {
         Seu navegador não suporta vídeo em HTML5.
       </video>
 
-      <div className="absolute inset-0 bg-black opacity-70" />
+      <div className="absolute inset-0 bg-linear-to-b from-[#0000ff] to-[#000000] opacity-70" />
 
       <div className="relative z-10 md:h-full w-full flex flex-col md:flex-row items-center justify-between px-6 md:px-20 text-white">
         <div className="text-left md:w-1/2 mt-20 md:mt-0">
           <span className="inline-block border border-white px-4 py-1 text-xs tracking-widest rounded-full mb-4">
-            SOBRE NÓS
+            CONTATO
           </span>
           <h1 className="text-4xl md:text-5xl font-semibold md:leading-tight">
             FAÇA JÁ O SEU <br /> ORÇAMENTO

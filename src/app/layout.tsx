@@ -1,6 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
-import Script from "next/script"; // Importe o componente Script
+import Script from "next/script";
 
 import "./globals.css";
 import Header from "@/components/Header/Header";
@@ -19,7 +19,10 @@ export default function RootLayout({
   const hideHeaderFooter = pathname.startsWith("/nothing");
 
   return (
-    <html lang="en">
+    <html lang="pt-BR">
+      <head>
+        <link rel="icon" href="/favicon.png" />
+      </head>
       <Script
         id="gtm-script"
         strategy="afterInteractive"
