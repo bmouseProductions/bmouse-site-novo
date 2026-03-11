@@ -178,6 +178,42 @@ const projetos = [
     slug: "mid",
     cols: "md:col-span-2 md:row-span-2 row-span-1 col-span-3",
   },
+  {
+    src: "/projetos/cardeal-empreendimentos.png",
+    alt: "Cardeal Empreendimentos",
+    slug: "cardeal-empreendimentos",
+    cols: "md:col-span-2 md:row-span-3 col-span-3 row-span-1",
+  },
+  {
+    src: "/projetos/grupopatense.png",
+    alt: "Grupo Patense",
+    slug: "grupo-patense",
+    cols: "col-span-3 md:row-span-3 row-span-1",
+  },
+  {
+    src: "/projetos/cafe-nova-geracao.jpeg",
+    alt: "Café Nova Geração",
+    slug: "cafe-nova-geracao",
+    cols: "col-span-5 md:row-span-3 row-span-1",
+  },
+  {
+    src: "/projetos/transtriangulo.png",
+    alt: "Transtriângulo",
+    slug: "transtriangulo",
+    cols: "col-span-3 md:row-span-2 row-span-1 ",
+  },
+  {
+    src: "/projetos/neogenetics.png",
+    alt: "Neogenetics",
+    cols: "md:col-span-2 col-span-3 row-span-1",
+    slug: "neogenetics",
+  },
+  {
+    src: "/projetos/juvia.png",
+    alt: "Juvia",
+    cols: "md:col-span-2 col-span-3 row-span-1",
+    slug: "juvia",
+  },
 ];
 
 const Cases = () => {
