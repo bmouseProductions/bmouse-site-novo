@@ -3,6 +3,12 @@ import Image from "next/image";
 
 const projetos = [
   {
+    src: "/projetos/casa-sobre-a-rocha.png",
+    alt: "A Caso Sobre a Rocha - Juliano Cazarré",
+    slug: "a-casa-sobre-a-rocha",
+    cols: "md:col-span-5 md:row-span-2 row-span-1 col-span-3",
+  },
+  {
     src: "/projetos/cury/cury-desk.png",
     alt: "The most read psichiatrist in the world",
     slug: "augusto-cury",
